@@ -16,16 +16,21 @@
 }
 
 .card:hover {
-  transform: scale(1.05);
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+  transform: scale(1.03);
   z-index: 5;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); 
   transition: .5s;
+  color: rgb(3, 9, 15);
 }
+
+
 
 .card:hover::before{
    background: rgb(85 108 214/5%); 
  
 }
+
 
 
 
