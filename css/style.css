@@ -16,7 +16,8 @@
 }
 
 .card:hover {
-  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+  /* background: linear-gradient(-45deg, #f403d1, #64b5f6); */
+  background: green;
   transform: scale(1.03);
   z-index: 5;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); 
