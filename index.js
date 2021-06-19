@@ -1,3 +1,4 @@
+//theme changer code
 // you can use app's unique identifier here
 const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
 
@@ -46,7 +47,7 @@ function disableDarkTheme() {
 }
 
 
-//animations
+//animations text wrap up
 
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
