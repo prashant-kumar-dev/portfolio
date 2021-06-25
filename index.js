@@ -7,6 +7,7 @@ const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
 // you can change this url as needed
 const DARK_THEME_PATH = "https://bootswatch.com/4/cyborg/bootstrap.min.css";
 
+
 const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
 const THEME_TOGGLER = document.getElementById("theme-toggler");
 
@@ -42,7 +43,7 @@ function enableDarkTheme() {
 }
 
 function disableDarkTheme() {
-  DARK_STYLE_LINK.setAttribute("href", "");
+  DARK_STYLE_LINK.setAttribute("href","");
   THEME_TOGGLER.innerHTML = "🌞";
 }
 
