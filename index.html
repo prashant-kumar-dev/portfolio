@@ -18,67 +18,81 @@
 
 <body class="bg-light" id="page-top">
     <!-- navbar starts here -->
-    <nav class="navbar navbar-light fixed-top py-4 
-    bg-light shadow-sm">
-        <div class="container-lg">
-            <a class="navbar-brand text-danger fw-bold " href="#">թɾαsհαղԵ</a>
-            <div>
-                <a href="javascript:void()" class="btn btn-outline-white  mx-auto fw-bold  shadow-sm rounded-pill"
-                    id="theme-toggler" onclick="toggleTheme()"></a>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm py-3">
+    <div class="container-lg">
+        <!-- Brand Name -->
+        <a class="navbar-brand text-danger fw-bold fs-4" href="#">ԹɾαsհαղԵ</a>
 
-            <div class="dropdown">
-                <button class="btn btn-secondary btn-danger px-3" type="button" id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#home">Home</a></li>
-                    <li><a class="dropdown-item" href="#about">About</a></li>
-                    <li><a class="dropdown-item" href="#projects">Projects</a></li>
-                    <li><a class="dropdown-item" href="#achievements">Achievements</a></li>
-                    <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
-                    <li><a class="dropdown-item" href="#contact">Contact</a> </li>
+        <!-- Theme Toggle Button -->
+        <button class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center"
+            id="theme-toggler" onclick="toggleTheme()" style="width: 40px; height: 40px;">
+            <i class="fas fa-moon"></i>
+        </button>
 
-                </ul>
-            </div>
+        <!-- Mobile Menu Toggle -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars fs-4"></i>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#home">🏠 Home</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#about">👤 About</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#projects">💼 Projects</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#achievements">🏆 Achievements</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#testimonials">💬 Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#contact">📩 Contact</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- navbar starts end here -->
 
-    <!-- home section starts here -->
-    <section class="home py-5" id="home">
+    <!-- Home Section Starts Here -->
+    <section class="home py-5 d-flex align-items-center min-vh-100" id="home">
         <div class="container-lg">
-            <div class="row  min-vh-100 align-items-center align-content-center">
-                <div class="col-md-6 mt-5 mt-md-5">
-                    <div class="home-img text-center">
-                        <img class="rounded-circle shadow-sm  mw-100 w-50  avtar" src="images/p.png" alt="profile img">
-                    </div>
+            <div class="row align-items-center text-center text-md-start">
+                <!-- Profile Image Section -->
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="images/p.png" alt="Prashant Kumar" 
+                        class="rounded-circle shadow-lg border border-4 border-danger p-2"
+                        style="width: 300px; height: 300px; transition: transform 0.3s ease-in-out;"
+                        onmouseover="this.style.transform='scale(1.05)'" 
+                        onmouseout="this.style.transform='scale(1)'">
                 </div>
-                <div class="col-md-6 order-md-first mt-4 mt-md-0">
-                    <div class="home-text">
-                        <!-- <p class="mb-1 text-center">Hello I'm </p>
-                        <marquee behavior="alternate" direction="">
-                            <h1 class="text-danger text-uppercase fs-2 fw-bold">Prashant kumar</h1>
-                        </marquee> -->
-                        <h1 class="text-center">
-                           
-                            <a href="" class="typewrite fs-3 text-danger text-decoration-none" data-period="2000" data-type='[ "Hello, Im Prashant Kumar.", "I am Creative.",  "I Love to Develop." ]'>
-                              <span class="wrap"></span>
-                            </a>
-                          </h1>
-                          
-                        <p class="mt-3 "> I am a Software Developer at<b> Ans Commerce(Flipkart)</b> work alongside a team of programmers to code programs that meet the need of the company or client. They seek to facilitate the proper design and implementation of software.</p>
-                        <div class="text-center">
-                            <a href="#about"
-                                class="btn btn-outline-danger shadow mx-6  mt-3 rounded-pill">More About Me</a>
-                        </div>
+
+                <!-- Text Content Section -->
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h5 class="fw-bold text-danger">Hello, I'm</h5>
+                    <h4 class="typewrite text-uppercase fw-bold text-danger" 
+                        data-period="2000"
+                        data-type='[ "Prashant Kumar.", "a Creative Developer.", "a Problem Solver.", "a Tech Enthusiast 🚀" ]'>
+                        <span class="wrap"></span>
+                    </h4>
+                    <p class="mt-3 lead text-muted ">
+                        👨‍💻 Senior Software Engineer | 🧩 Problem Solver | 🚀 Tech Enthusiast  
+                        Passionate about **building scalable solutions** and exploring **cutting-edge technologies**.
+                    </p>
+
+                    <!-- Call to Action Buttons -->
+                    <div class="mt-4 d-grid gap-3 d-md-flex justify-content-md-start">
+                        <a href="#about" class="btn btn-danger shadow-lg px-4 py-2 rounded-pill fw-semibold">
+                            More About Me 🚀
+                        </a>
+                        <a href="images/Resume-final.pdf" target="_blank" class="btn btn-outline-danger px-4 py-2 rounded-pill fw-semibold">
+                            Download Resume 📄
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
 
     <!-- home section ends here -->
 
@@ -99,9 +113,7 @@
                     <div class="about-text">
                         <h3 class="fs-4 mb-3">Hello! I am Prashant
                         </h3>
-                        <p class=" "> Staying in Sitamarhi Bihar,i'm interested
-                            in problem solving and learning new stuff. i would like to learn more on web development
-                            i am M.C.A student wanting to increase my knowledge on computer science as well.
+                        <p class=" "> I am a Senior Software Engineer with a strong passion for problem-solving and building scalable solutions. With expertise in software development and web technologies, I enjoy tackling complex challenges and continuously learning new advancements in the field. I am always looking for opportunities to enhance my skills and contribute to impactful projects in the tech industry.
                         </p>
                     </div>
 
@@ -144,24 +156,24 @@
                         <h3 class="text-center fs-4 fw-bold"> Skills-Set</h3>
 
                         <a href="#" class="btn btn-light shadow 
-                  mb-2  rounded-pill ">HTML5</a>
-
-                        <div class="progress " style="height: 10px;">
-                            <div class="progress-bar bg-danger d-flex progress-bar-striped progress-bar-animated" role="progressbar"  style="width: 50%;"
-                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <a href="#" class="btn btn-light shadow 
-                  my-2  rounded-pill ">C++</a>
-
-                        <div class="progress " style="height: 10px;">
-                            <div class="progress-bar bg-danger d-flex  progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;"
-                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <a href="#" class="btn btn-light shadow 
                   my-2  rounded-pill ">NodeJs</a>
 
                         <div class="progress " style="height: 10px;">
-                            <div class="progress-bar d-flex bg-danger  progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%;"
+                            <div class="progress-bar d-flex bg-danger  progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <a href="#" class="btn btn-light shadow 
+                  my-2  rounded-pill ">Laravel</a>
+
+                        <div class="progress " style="height: 10px;">
+                            <div class="progress-bar bg-danger d-flex  progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <a href="#" class="btn btn-light shadow 
+                  my-2  rounded-pill ">PHP</a>
+
+                        <div class="progress " style="height: 10px;">
+                            <div class="progress-bar bg-danger d-flex  progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;"
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <a href="#" class="btn btn-light shadow 
@@ -213,7 +225,6 @@
                             <i class="las la-award text-muted bg-white shadow rounded-circle fs-1"></i>
                         </div>
                         <div>
-                            <p class="text-dark mb-1">2017</p>
                             <h4 class="fs-4">Bachelor Of Computer Applications (BCA)</h4>
                             <p class="mb-0 ">Directorate Of Distance Education Sikkim Manipal
                                 University, East Sikkim</p>
@@ -227,7 +238,6 @@
                             <i class="las la-award text-muted bg-white shadow rounded-circle fs-1"></i>
                         </div>
                         <div>
-                            <p class="text-dark mb-1">2014</p>
                             <h4 class="fs-4">Higher Secondary Certificate</h4>
                             <p class="mb-0 ">R.Jha College ,Sitamarhi Bihar</p>
                             <p class="fs-5 "> Percentage: 69.20/100.00</p>
@@ -240,7 +250,6 @@
                             <i class="las la-award text-muted  bg-white shadow rounded-circle fs-1"></i>
                         </div>
                         <div>
-                            <p class="text-dark mb-1">2012</p>
                             <h4 class="fs-4">Secondary School Certificate</h4>
                             <p class="mb-0 ">Sitamarhi High School,Dumra</p>
                             <p class="fs-5 "> Percentage: 74.20/100.00</p>
@@ -295,21 +304,6 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-5 mb-4 card shadow-sm ">
-                    <div class="projects-item py-4 rounded ">
-                        <div class="icon fs-2 text-danger">
-                            <i class="las la-sun"></i>
-                        </div>
-                        <h4 class="card-title fs-5 fw-bold">Dyanamic weather website</h4>
-                        <p>it is a dynamic current weather-project which simply takes city name &
-                            it gives results about weather of that particular city
-                            by using open weather API.
-                        </p>
-                        <a href="https://weather-web-pk.herokuapp.com/" target="_blank"><button type="button"
-                                class="btn btn-outline-danger shadow rounded-pill">Live</button> </a>
-                    </div>
-                </div>
-
                 <div class="col-md-6 col-lg-5 mb-4 card shadow-sm">
                     <div class="projects-item py-4 rounded ">
                         <div class="icon fs-2 text-danger">
@@ -331,18 +325,6 @@
                         <h4 class="card-title fs-5 fw-bold">Simple Chat APP</h4>
                         <p class="">Real time chat app created with NodeJs, Express and Socket.IO where users can chat anonymously without reveal their identity.</p>
                         <a href="https://pk-chat-ap.herokuapp.com/" target="_blank"><button type="button"
-                                class="btn btn-outline-danger shadow rounded-pill">Live</button> </a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-5 mb-4 card shadow-sm ">
-                    <div class="projects-item py-4 rounded ">
-                        <div class="icon fs-2 text-danger">
-                            <i class="las la-user-secret"></i>
-                        </div>
-                        <h4 class="card-title fs-5 fw-bold">Personal portfolio website</h4>
-                        <p class="">This is My personal Portfolio. build to showcase my qualifications and achievements.</p>
-                        <a href="https://pksingh128.github.io/portfolio/" target="_blank"><button type="button"
                                 class="btn btn-outline-danger shadow rounded-pill">Live</button> </a>
                     </div>
                 </div>
@@ -413,10 +395,10 @@
         <div class="container-lg py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <marquee behavior="Scroll" direction="left" scrollamount="5">
-                        <p class="text-light fs-5">Do You Have Vacancy Matching With My Profile ?</p>
+                    <marquee behavior="Scroll" direction="left" scrollamount="6">
+                        <p class="text-light fs-5">Looking for a Full Stack Developer with expertise in PHP, Laravel, Node.js, and React.js?</p>
                     </marquee>
-                    <h2 class="fs-2 text-white mb-4"> I'm Available</h2>
+                    <h2 class="fs-2 text-white mb-4">I'm Available for New Opportunities</h2>
                     <a href="#contact" class="btn btn-outline-light rounded-pill shadow">Hire Me</a>
                 </div>
             </div>
@@ -455,10 +437,7 @@
                                         <p class=" m-0">Software Developer</p>
                                     </div>
                                 </div>
-                                <p class=" mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Adipisci
-                                    similique eos, assumenda
-                                    velit, facilis libero rem cumque amet excepturi neque qui illum. </p>
+                                <p class=" mt-3">Prashant is an exceptional developer with a keen eye for detail. His ability to solve complex problems and deliver high-quality code consistently impressed our entire team. His expertise in both frontend and backend technologies makes him a valuable asset to any project </p>
                                 <div class="ratings text-danger">
                                     <i class="las la-star"></i>
                                     <i class="las la-star"></i>
@@ -491,14 +470,11 @@
                                 <div class="testi-author-info d-flex align-items-center">
                                     <img src="images/t.jpg" class="img-thumbnail rounded-circle " alt="author-img">
                                     <div class="author ms-3">
-                                        <h3 class="fs-6 mb-1">Raj</h3>
-                                        <p class=" m-0">Software Developer</p>
+                                        <h3 class="fs-6 mb-1">Abhishek</h3>
+                                        <p class=" m-0">Project Manager</p>
                                     </div>
                                 </div>
-                                <p class=" mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Adipisci
-                                    similique eos, assumenda
-                                    velit, facilis libero rem cumque amet excepturi neque qui illum. </p>
+                                <p class=" mt-3">Working with Prashant was a pleasure. His technical skills are impressive. He consistently delivered features ahead of schedule and was always willing to help team members. I highly recommend him for any development role. </p>
                                 <div class="ratings text-danger">
                                     <i class="las la-star"></i>
                                     <i class="las la-star"></i>
@@ -593,17 +569,6 @@
         </div>
     </section>
     <!-- contact section starts -->
-
-
-    <!-- map section -->
-    <section>
-        <div class="container-lg py-5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14278.180544432304!2d85.58267577286195!3d26.534749830167673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecf81ca5ffa21d%3A0x9f11c6d16146d830!2sBhagwanpur%20Chaube%2C%20Bihar%20843314!5e0!3m2!1sen!2sin!4v1627466777098!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
-    <!-- map section -->
-
-
 
     <!-- Scroll to Top Button-->
     <div class="text-end mt-0 pe-4">
