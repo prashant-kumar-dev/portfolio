@@ -1,36 +1,64 @@
-/* body{
-    font-family: 'Nunito', sans-serif;
-    padding: 50px;
-  } */
+/* Default Card Styling */
 .card {
-  border-radius: 10px;
+  border-radius: 12px;
   margin: 1rem;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-    0.3s box-shadow,
-    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-  padding: 14px 80px 18px 36px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
+    background 0.4s ease-in-out;
+  padding: 20px 50px 24px 30px;
   cursor: pointer;
-
+  background: #ffffff; /* Light Mode Default */
+  position: relative;
+  overflow: hidden;
 }
 
+/* Hover Effect - Subtle Gradient & Depth */
 .card:hover {
-  /* background: linear-gradient(-45deg, #f403d1, #64b5f6); */
-  background: #35BDD0;
-  transform: scale(1.03);
-  z-index: 5;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); 
-  transition: .5s;
-  color: rgb(3, 9, 15);
+  background: linear-gradient(135deg, #1e90ff, #35bdd0);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
 }
 
-
-
-.card:hover::before{
-   background: rgb(85 108 214/5%); 
- 
+/* Inner Glow Effect on Hover */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 10%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
+.card:hover::before {
+  opacity: 1;
+}
 
+/* Dark Mode Styling */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #222831; /* Dark Mode */
+    color: #eeeeee;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  }
 
+  .card:hover {
+    background: linear-gradient(135deg, #007cf0, #00dfd8);
+    color: #ffffff;
+  }
+}
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card {
+    padding: 16px 40px 20px 24px;
+  }
+}
