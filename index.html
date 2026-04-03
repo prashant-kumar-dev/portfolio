@@ -1,53 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Prashant Kumar — Senior Software Engineer in New Delhi. Full-stack development, e-commerce, Node.js, React, PHP & Laravel.">
+    <meta name="theme-color" content="#0d6efd">
+    <meta property="og:title" content="Prashant Kumar | Senior Software Engineer">
+    <meta property="og:description"
+        content="Portfolio, projects, and experience in scalable web development and e-commerce.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Prashant Kumar | Senior Software Engineer">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
-    <link id="dark-theme-style" rel="stylesheet" />
-    <title>portfolio</title>
+    <title>Prashant Kumar | Senior Software Engineer — Portfolio</title>
 </head>
 
-<body class="bg-light" id="page-top">
+<body class="bg-body" id="page-top">
     <!-- navbar starts here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm py-3">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom fixed-top shadow-sm py-3">
         <div class="container-lg">
-            <!-- Brand Name -->
-            <a class="navbar-brand text-danger fw-bold fs-4" href="#">ԹɾαsհαղԵ</a>
+            <a class="navbar-brand text-danger fw-bold fs-4" href="#page-top" aria-label="Prashant Kumar, top of page">ԹɾαsհαղԵ</a>
 
-            <!-- Theme Toggle Button -->
-            <button class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center"
-                id="theme-toggler" onclick="toggleTheme()" style="width: 40px; height: 40px;">
-                <i class="fas fa-moon"></i>
-            </button>
+            <div class="d-flex align-items-center gap-2 ms-auto order-lg-2">
+                <button type="button"
+                    class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center"
+                    id="theme-toggler" style="width: 40px; height: 40px;" aria-label="Switch to dark mode"
+                    aria-pressed="false">
+                    <span class="theme-icon" aria-hidden="true">☀️</span>
+                </button>
+                <button class="navbar-toggler d-lg-none border-0 shadow-none px-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Open menu">
+                    <i class="fa fa-bars fs-4" aria-hidden="true"></i>
+                </button>
+            </div>
 
-            <!-- Mobile Menu Toggle -->
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fa fa-bars fs-4"></i>
-            </button>
-
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#home">🏠 Home</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#about">👤 About</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#projects">💼 Projects</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#experience">📜 Experience</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#achievements">🏆 Achievements</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#testimonials">💬 Testimonials</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#contact">📩 Contact</a></li>
+            <div class="collapse navbar-collapse order-lg-1 flex-lg-grow-0" id="navbarNav">
+                <ul class="navbar-nav ms-lg-auto pt-3 pt-lg-0">
+                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#home" data-section="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#about" data-section="about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#projects" data-section="projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#experience" data-section="experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#achievements" data-section="achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#testimonials" data-section="testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#contact" data-section="contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -62,7 +70,9 @@
 
                 <!-- Animated Image Section -->
                 <div class="col-md-6 d-flex justify-content-center">
-                    <div id="lottie-animation" style="width: 500px; height: 500px;"></div>
+                    <div class="lottie-wrap">
+                        <div id="lottie-animation" aria-hidden="true"></div>
+                    </div>
                 </div>
 
                 <!-- Text Content Section -->
@@ -81,13 +91,17 @@
                     </p>
 
                     <!-- Call to Action Buttons -->
-                    <div class="mt-4 d-grid gap-3 d-md-flex justify-content-md-start justify-content-center">
-                        <a href="#about" class="btn btn-primary shadow-lg px-4 py-2 rounded-pill fw-semibold">
-                            Get to Know Me 🚀
+                    <div class="mt-4 d-grid gap-3 d-md-flex justify-content-md-start justify-content-center flex-wrap">
+                        <a href="#about" class="btn btn-primary shadow-lg px-4 py-2 rounded-pill fw-semibold nav-link-scroll">
+                            Get to know me
                         </a>
-                        <a href="images/Resume-final.pdf" target="_blank"
-                            class="btn btn-outline-primary px-4 py-2 rounded-pill fw-semibold">
-                            Download Resume 📄
+                        <a href="images/Resume-final.pdf" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-primary px-4 py-2 rounded-pill fw-semibold" download>
+                            Download resume
+                        </a>
+                        <a href="images/Resume-final.pdf" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-secondary px-4 py-2 rounded-pill fw-semibold">
+                            Open resume
                         </a>
                     </div>
                 </div>
@@ -104,13 +118,15 @@
 
 
     <!-- about sectoin stats here -->
-    <section class="about  py-3" id="about">
+    <section class="about py-4 section-band" id="about">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center fs-2">
-                        <i class="las la-address-card text-danger"></i>
-                        <h3 class=" fw-bold mb-5 fs-2">About me</h3>
+                <div class="col-lg-8 text-center">
+                    <p class="section-eyebrow mb-0">Profile</p>
+                    <div class="section-title fs-2">
+                        <i class="fa fa-id-card-o text-danger" aria-hidden="true"></i>
+                        <h2 class="fw-bold mb-2 fs-2">About me</h2>
+                        <p class="text-body-secondary mb-5 mx-auto" style="max-width: 36rem;">Engineer focused on scalable products, clean delivery, and measurable impact.</p>
                     </div>
                 </div>
             </div>
@@ -152,100 +168,62 @@
 
                     <div class="row">
                         <div class="col-lg-12 d-flex align-items-center fs-2">
-                            <a href="images/Resume-final.pdf" target="_blank"
-                                class="btn btn-outline-danger shadow me-4 my-4 ms-2 rounded-pill">
-                                📄 Download Resume
+                            <a href="images/Resume-final.pdf" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-outline-danger shadow me-4 my-4 ms-2 rounded-pill" download>
+                                Download resume
                             </a>
                             <div class="social-links py-2">
-                                <a href="https://www.facebook.com/prashant706586" target="_blank" class="px-1">
-                                    <i class="fa fa-facebook-square"></i>
+                                <a href="https://www.facebook.com/prashant706586" target="_blank" rel="noopener noreferrer" class="px-1" aria-label="Facebook">
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://www.linkedin.com/in/prashant-kumar-160bba132/" target="_blank"
-                                    class="px-1">
-                                    <i class="fa fa-linkedin-square"></i>
+                                <a href="https://www.linkedin.com/in/prashant-kumar-160bba132/" target="_blank" rel="noopener noreferrer"
+                                    class="px-1" aria-label="LinkedIn">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://www.instagram.com/prash.ant_kumar/" target="_blank" class="px-1">
-                                    <i class="fa fa-instagram"></i>
+                                <a href="https://www.instagram.com/prash.ant_kumar/" target="_blank" rel="noopener noreferrer" class="px-1" aria-label="Instagram">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://github.com/pksingh128" target="_blank" class="px-1">
-                                    <i class="fa fa-github-square"></i>
+                                <a href="https://github.com/prashant-kumar-dev" target="_blank" rel="noopener noreferrer" class="px-1" aria-label="GitHub">
+                                    <i class="fa fa-github-square" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6  mt-5 mt-md-0">
-                    <div class="skill-set">
-                        <h3 class="text-center fs-4 fw-bold"> Skills-Set</h3>
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="skill-set p-3 p-md-4 rounded-4 border border-secondary-subtle bg-body-secondary bg-opacity-25">
+                        <h3 class="text-center fs-4 fw-bold mb-1">Skills</h3>
+                        <p class="text-center text-body-secondary small mb-4">Stack I use regularly in production.</p>
 
-                        <a href="#" class="btn btn-light shadow 
-                  my-2  rounded-pill ">NodeJs</a>
-
-                        <div class="progress " style="height: 10px;">
-                            <div class="progress-bar d-flex bg-danger  progress-bar-striped progress-bar-animated"
-                                role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                        <a href="#" class="btn btn-light shadow 
-                  my-2  rounded-pill ">ReactJs</a>
-
-                        <div class="progress " style="height: 10px;">
-                            <div class="progress-bar d-flex bg-danger  progress-bar-striped progress-bar-animated"
-                                role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                        <a href="#" class="btn btn-light shadow 
-                  my-2  rounded-pill ">ExpressJs</a>
-
-                        <div class="progress " style="height: 10px;">
-                            <div class="progress-bar d-flex bg-danger  progress-bar-striped progress-bar-animated"
-                                role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                        <a href="#" class="btn btn-light shadow 
-                  my-2  rounded-pill ">Laravel</a>
-
-                        <div class="progress " style="height: 10px;">
-                            <div class="progress-bar bg-danger d-flex  progress-bar-striped progress-bar-animated"
-                                role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                        <a href="#" class="btn btn-light shadow 
-                  my-2  rounded-pill ">PHP</a>
-
-                        <div class="progress " style="height: 10px;">
-                            <div class="progress-bar bg-danger d-flex  progress-bar-striped progress-bar-animated"
-                                role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                        <a href="#" class="btn btn-light shadow 
-                  my-2  rounded-pill ">Tailwind CSS</a>
-                        <div class="progress " style="height: 10px;">
-                            <div class="progress-bar bg-danger d-flex  progress-bar-striped progress-bar-animated"
-                                role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                        <a href="#" class="btn btn-light shadow 
-                  my-2  rounded-pill ">Bootstrap</a>
-
-                        <div class="progress " style="height: 10px;">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated d-flex bg-danger  progress-bar-striped active"
-                                role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                        <h4 class="skill-group-title">Languages &amp; runtime</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-chip">JavaScript</span>
+                            <span class="skill-chip">Node.js</span>
+                            <span class="skill-chip">PHP</span>
                         </div>
 
-                        <div>
-                            <a href="#" class="btn btn-light shadow my-4 ms-2
-                      rounded-pill ">CSS</a>
-                            <a href="#" class="btn btn-light shadow ms-2
-                    my-1  rounded-pill ">MYSQL</a>
-                            <a href="#" class="btn btn-light shadow ms-2
-                    my-1  rounded-pill ">Javascript</a>
-                            <a href="#" class="btn btn-light shadow ms-2
-                    my-1  rounded-pill ">OS</a>
-                            <a href="#" class="btn btn-light shadow ms-2
-                    my-1  rounded-pill ">Datastucture and Algo</a>
+                        <h4 class="skill-group-title">Frameworks &amp; UI</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-chip">React</span>
+                            <span class="skill-chip">Express</span>
+                            <span class="skill-chip">Laravel</span>
+                            <span class="skill-chip">Bootstrap</span>
+                            <span class="skill-chip">Tailwind CSS</span>
+                        </div>
+
+                        <h4 class="skill-group-title">Data, cache &amp; search</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-chip">MySQL</span>
+                            <span class="skill-chip">MongoDB</span>
+                            <span class="skill-chip">Redis</span>
+                            <span class="skill-chip">Elasticsearch</span>
+                        </div>
+
+                        <h4 class="skill-group-title">Fundamentals</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-chip">CSS</span>
+                            <span class="skill-chip">Data structures &amp; algorithms</span>
                         </div>
                     </div>
                 </div>
@@ -258,58 +236,58 @@
 
                 <!-- Master of Computer Applications (MCA) -->
                 <div class="col-lg-6 col-md-6 my-3">
-                    <div class="d-flex p-4 bg-light shadow rounded">
-                        <div class="me-4 d-flex align-items-center fs-1 text-primary">
-                            <i class="las la-graduation-cap bg-white shadow rounded-circle p-3"></i>
+                    <div class="d-flex p-4 shadow-sm edu-card">
+                        <div class="edu-icon-wrap me-4 flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle text-primary shadow-sm"
+                            aria-hidden="true">
+                            <i class="fa fa-graduation-cap fa-2x"></i>
                         </div>
                         <div>
-                            <p class="text-muted mb-1">📅 2019 - 2022</p>
-                            <h4 class="fs-4 fw-bold text-dark">Master of Computer Applications (MCA)</h4>
-                            <p class="mb-0 text-secondary">Maulana Azad National Institute of Technology</p>
-                            <p class="fs-5 fw-bold text-success">🎯 CGPA: 8.31/10.00</p>
+                            <p class="text-body-secondary mb-1 small">2019 – 2022</p>
+                            <h4 class="fs-5 fw-bold">Master of Computer Applications (MCA)</h4>
+                            <p class="mb-0 text-body-secondary">Maulana Azad National Institute of Technology</p>
+                            <p class="fs-6 fw-semibold text-success mt-2 mb-0">CGPA: 8.31 / 10.00</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bachelor of Computer Applications (BCA) -->
                 <div class="col-lg-6 col-md-6 my-3">
-                    <div class="d-flex p-4 bg-light shadow rounded">
-                        <div class="me-4 d-flex align-items-center fs-1 text-primary">
-                            <i class="las la-graduation-cap bg-white shadow rounded-circle p-3"></i>
+                    <div class="d-flex p-4 shadow-sm edu-card">
+                        <div class="edu-icon-wrap me-4 flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle text-primary shadow-sm"
+                            aria-hidden="true">
+                            <i class="fa fa-graduation-cap fa-2x"></i>
                         </div>
                         <div>
-                            <h4 class="fs-4 fw-bold text-dark">Bachelor of Computer Applications (BCA)</h4>
-                            <p class="mb-0 text-secondary">Sikkim Manipal University
-                            </p>
-                            <p class="fs-5 fw-bold text-success">🎯 Percentage: 64.41%</p>
+                            <h4 class="fs-5 fw-bold">Bachelor of Computer Applications (BCA)</h4>
+                            <p class="mb-0 text-body-secondary">Sikkim Manipal University</p>
+                            <p class="fs-6 fw-semibold text-success mt-2 mb-0">64.41%</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Higher Secondary Certificate -->
                 <div class="col-lg-6 col-md-6 my-3">
-                    <div class="d-flex p-4 bg-light shadow rounded">
-                        <div class="me-4 d-flex align-items-center fs-1 text-primary">
-                            <i class="las la-award bg-white shadow rounded-circle p-3"></i>
+                    <div class="d-flex p-4 shadow-sm edu-card">
+                        <div class="edu-icon-wrap me-4 flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle text-primary shadow-sm"
+                            aria-hidden="true">
+                            <i class="fa fa-certificate fa-2x"></i>
                         </div>
                         <div>
-                            <h4 class="fs-4 fw-bold text-dark">Higher Secondary Certificate</h4>
-                            <p class="mb-0 text-secondary">R. Jha College, Sitamarhi, Bihar</p>
-                            <p class="fs-5 fw-bold text-success">🎯 Percentage: 69.20%</p>
+                            <h4 class="fs-5 fw-bold">Higher Secondary Certificate</h4>
+                            <p class="mb-0 text-body-secondary">R. Jha College, Sitamarhi, Bihar</p>
+                            <p class="fs-6 fw-semibold text-success mt-2 mb-0">69.20%</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Secondary School Certificate -->
                 <div class="col-lg-6 col-md-6 my-3">
-                    <div class="d-flex p-4 bg-light shadow rounded">
-                        <div class="me-4 d-flex align-items-center fs-1 text-primary">
-                            <i class="las la-award bg-white shadow rounded-circle p-3"></i>
+                    <div class="d-flex p-4 shadow-sm edu-card">
+                        <div class="edu-icon-wrap me-4 flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle text-primary shadow-sm"
+                            aria-hidden="true">
+                            <i class="fa fa-certificate fa-2x"></i>
                         </div>
                         <div>
-                            <h4 class="fs-4 fw-bold text-dark">Secondary School Certificate</h4>
-                            <p class="mb-0 text-secondary">Sitamarhi High School, Dumra</p>
-                            <p class="fs-5 fw-bold text-success">🎯 Percentage: 74.20%</p>
+                            <h4 class="fs-5 fw-bold">Secondary School Certificate</h4>
+                            <p class="mb-0 text-body-secondary">Sitamarhi High School, Dumra</p>
+                            <p class="fs-6 fw-semibold text-success mt-2 mb-0">74.20%</p>
                         </div>
                     </div>
                 </div>
@@ -320,49 +298,65 @@
     </section>
     <!-- about sectoin ends here -->
     <!-- Work Experience Section -->
-    <section class="experience py-5" id="experience">
+    <section class="experience py-5 section-band" id="experience">
         <div class="container-lg">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="section-title fs-2 fw-bold mb-5">
-                        <i class="las la-briefcase text-primary"></i> Work Experience
+                    <p class="section-eyebrow">Career</p>
+                    <h2 class="section-title fs-2 fw-bold mb-2">
+                        <i class="fa fa-briefcase text-primary" aria-hidden="true"></i> Work experience
                     </h2>
+                    <p class="text-body-secondary mb-5">Roles where I shipped production systems and measurable improvements.</p>
                 </div>
             </div>
 
-            <div class="row">
-                <!-- Experience Item: ANS Commerce -->
-                <div class="col-md-12 mb-4">
-                    <div class="card shadow border-0">
-                        <div class="card-body">
-                            <h4 class="fw-bold mb-1">Software Engineer</h4>
-                            <h5 class="text-muted">ANS Commerce • Aug 2022 - Present</h5>
-                            <p class="d-none d-md-block"><i class="las la-map-marker-alt"></i> Gurugram, Haryana</p>
-                            <ul class="mb-0">
-                                <li>Developed & maintained e-commerce sites for multiple brands.</li>
-                                <li>Integrated Razorpay Magic Checkout, reducing checkout time by 20%.</li>
-                                <li>Implemented analytics tools (MoEngage, Netcore) to improve conversions.</li>
-                                <li>Automated workflows with cron jobs, reducing manual efforts.</li>
-                                <li>Resolved major checkout, payment & cart-related bugs.</li>
-                                <li class="d-none d-md-block">Enhanced SMS Manager system for better message delivery.
-                                </li>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true"></span>
+                    <div class="card timeline-content shadow-sm border-0">
+                        <div class="card-body p-0">
+                            <h3 class="h5 fw-bold mb-1">Software Engineer</h3>
+                            <p class="text-body-secondary mb-1 fw-semibold">Paisabazaar · May 2025 – Present</p>
+                            <p class="small text-body-secondary d-none d-md-block mb-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Gurugram, Haryana</p>
+                            <ul>
+                                <li>Building and shipping features for consumer-facing fintech and marketplace products.</li>
+                                <li>Working with cross-functional teams on reliable, scalable web experiences.</li>
+                                <li>Improving quality, performance, and maintainability across the stack.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Experience Item: Applied Materials -->
-                <div class="col-md-12 mb-4">
-                    <div class="card shadow border-0">
-                        <div class="card-body">
-                            <h4 class="fw-bold mb-1">Software Development Intern</h4>
-                            <h5 class="text-muted">Applied Materials • Dec 2021 - July 2022</h5>
-                            <p class="d-none d-md-block"><i class="las la-map-marker-alt"></i> Bengaluru, Karnataka</p>
-                            <ul class="mb-0">
+                <div class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true"></span>
+                    <div class="card timeline-content shadow-sm border-0">
+                        <div class="card-body p-0">
+                            <h3 class="h5 fw-bold mb-1">Software Engineer</h3>
+                            <p class="text-body-secondary mb-1 fw-semibold">ANS Commerce · Aug 2022 – Apr 2025</p>
+                            <p class="small text-body-secondary d-none d-md-block mb-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Gurugram, Haryana</p>
+                            <ul>
+                                <li>Developed &amp; maintained e-commerce sites for multiple brands.</li>
+                                <li>Integrated Razorpay Magic Checkout, reducing checkout time by 20%.</li>
+                                <li>Implemented analytics tools (MoEngage, Netcore) to improve conversions.</li>
+                                <li>Automated workflows with cron jobs, reducing manual efforts.</li>
+                                <li>Resolved major checkout, payment &amp; cart-related bugs.</li>
+                                <li class="d-none d-md-block">Enhanced SMS Manager system for better message delivery.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true"></span>
+                    <div class="card timeline-content shadow-sm border-0">
+                        <div class="card-body p-0">
+                            <h3 class="h5 fw-bold mb-1">Software Development Intern</h3>
+                            <p class="text-body-secondary mb-1 fw-semibold">Applied Materials · Dec 2021 – July 2022</p>
+                            <p class="small text-body-secondary d-none d-md-block mb-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Bengaluru, Karnataka</p>
+                            <ul>
                                 <li>Developed JVM monitoring solutions for performance analysis.</li>
                                 <li>Automated logging tasks using PowerShell scripts.</li>
-                                <li class="d-none d-md-block">Optimized application performance via memory profiling.
-                                </li>
+                                <li class="d-none d-md-block">Optimized application performance via memory profiling.</li>
                             </ul>
                         </div>
                     </div>
@@ -376,14 +370,11 @@
     <!-- Projects Section Starts Here -->
     <section class="projects py-5" id="projects">
         <div class="container-lg">
-            <!-- Section Title -->
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <div class="section-title">
-                        <h2 class="section-title mb-5 fs-2 fw-bold">🚀 Featured Projects</h2>
-                        <p class="text-muted">A collection of my best projects showcasing my skills in web development,
-                            backend engineering, and full-stack development.</p>
-                    </div>
+                    <p class="section-eyebrow">Portfolio</p>
+                    <h2 class="section-title mb-2 fs-2 fw-bold">Featured projects</h2>
+                    <p class="text-body-secondary mb-5">Web, backend, and full-stack work with clear outcomes.</p>
                 </div>
             </div>
 
@@ -392,122 +383,131 @@
 
                 <!-- Project Cards -->
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card project-card shadow-lg p-4 border-0 h-100">
-                        <div class="icon fs-1 text-danger mb-3">
-                            <i class="las la-pizza-slice"></i>
+                    <div class="card project-card shadow-sm p-4 border h-100">
+                        <div class="icon fs-1 text-danger mb-2" aria-hidden="true">
+                            <i class="fa fa-cutlery"></i>
                         </div>
-                        <h4 class="card-title fw-bold">Pizza4U</h4>
-                        <p class="text-muted">An online pizza ordering system with real-time tracking just like email
-                            updates.</p>
-                        <a href="https://github.com/pksingh128/pizza" target="_blank"
-                            class="btn btn-outline-danger shadow rounded-pill"
-                            style="position: relative; z-index: 10; pointer-events: auto;">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card project-card shadow-lg p-4 border-0 h-100">
-                        <div class="icon fs-1 text-primary mb-3">
-                            <i class="las la-book-medical"></i>
+                        <h3 class="h5 card-title fw-bold">Pizza4U</h3>
+                        <p class="text-body-secondary small">Online pizza ordering with order tracking and updates.</p>
+                        <div class="project-tech d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge rounded-pill text-bg-secondary">Full-stack</span>
+                            <span class="badge rounded-pill text-bg-secondary">E-commerce</span>
                         </div>
-                        <h4 class="card-title fw-bold">Doctor Appointment System</h4>
-                        <p class="text-muted">A smart appointment booking system for seamless doctor consultations.</p>
-                        <a href="https://github.com/pksingh128/Doctors-Appointment-System" target="_blank"
-                            class="btn btn-outline-primary shadow rounded-pill"
-                            style="position: relative; z-index: 10; pointer-events: auto;">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card project-card shadow-lg p-4 border-0 h-100">
-                        <div class="icon fs-1 text-success mb-3">
-                            <i class="las la-users"></i>
-                        </div>
-                        <h4 class="card-title fw-bold">User Management System</h4>
-                        <p class="text-muted">CRUD-based user management system with an intuitive dashboard.</p>
-                        <a href="https://github.com/pksingh128/user-management" target="_blank"
-                            class="btn btn-outline-success shadow rounded-pill"
-                            style="position: relative; z-index: 10; pointer-events: auto;">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card project-card shadow-lg p-4 border-0 h-100">
-                        <div class="icon fs-1 text-danger mb-3">
-                            <i class="lab la-rocketchat"></i>
-                        </div>
-                        <h4 class="card-title fw-bold">Simple Chat App</h4>
-                        <p class="text-muted">A real-time chat app built with Node.js, Express, and Socket.IO.</p>
-                        <a href="https://pk-chat-ap.herokuapp.com/" target="_blank"
-                            class="btn btn-outline-danger shadow rounded-pill"
-                            style="position: relative; z-index: 10; pointer-events: auto;">
-                            Live Demo
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card project-card shadow-lg p-4 border-0 h-100">
-                        <div class="icon fs-1 text-warning mb-3">
-                            <i class="las la-shopping-cart"></i>
-                        </div>
-                        <h4 class="card-title fw-bold">Shopping Cart</h4>
-                        <p class="text-muted">A React & Redux shopping cart system with dynamic pricing.</p>
-                        <a href="https://65ed557cc242b334dcb6ff90--coruscating-douhua-665051.netlify.app/"
-                            target="_blank" class="btn btn-outline-warning shadow rounded-pill"
-                            style="position: relative; z-index: 10; pointer-events: auto;">
-                            Live Demo
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card project-card shadow-lg p-4 border-0 h-100">
-                        <div class="icon fs-1 text-success mb-3">
-                            <i class="las la-seedling"></i>
-                        </div>
-                        <h4 class="card-title fw-bold">Greenify - Plant E-Commerce</h4>
-                        <p class="text-muted">An online plant store with authentication & categorized listings.</p>
-                        <a href="https://github.com/prashant-kumar-dev/e-Shop" target="_blank"
-                            class="btn btn-outline-success shadow rounded-pill"
-                            style="position: relative; z-index: 10; pointer-events: auto;">
+                        <a href="https://github.com/prashant-kumar-dev/Pizza4U" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-danger rounded-pill btn-sm stretched-link position-relative">
                             GitHub
                         </a>
                     </div>
                 </div>
 
-
-                <!-- WealthSync Project -->
-                <div class="col-md-12 col-lg-6 mb-4">
-                    <div class="card project-card shadow-lg p-4 border-0 h-100">
-                        <div class="icon fs-1 text-danger mb-3">
-                            <i class="las la-wallet"></i>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card shadow-sm p-4 border h-100">
+                        <div class="icon fs-1 text-primary mb-2" aria-hidden="true">
+                            <i class="fa fa-medkit"></i>
                         </div>
-                        <h4 class="card-title fw-bold">WealthSync – Expense Manager</h4>
-                        <p class="text-muted">A budgeting tool for tracking expenses, setting budgets & generating
-                            reports.</p>
+                        <h3 class="h5 card-title fw-bold">Doctor appointment system</h3>
+                        <p class="text-body-secondary small">Booking flow for doctor consultations.</p>
+                        <div class="project-tech d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge rounded-pill text-bg-secondary">Web</span>
+                            <span class="badge rounded-pill text-bg-secondary">CRUD</span>
+                        </div>
+                        <a href="https://github.com/prashant-kumar-dev/Doctors-Appointment-System" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-primary rounded-pill btn-sm stretched-link position-relative">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
 
-                        <!-- Buttons with spacing -->
-                        <div class="d-flex gap-3 justify-content-center mt-3">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card shadow-sm p-4 border h-100">
+                        <div class="icon fs-1 text-success mb-2" aria-hidden="true">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">User management system</h3>
+                        <p class="text-body-secondary small">CRUD dashboard for users and roles.</p>
+                        <div class="project-tech d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge rounded-pill text-bg-secondary">Dashboard</span>
+                            <span class="badge rounded-pill text-bg-secondary">API</span>
+                        </div>
+                        <a href="https://github.com/prashant-kumar-dev/user-management" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-success rounded-pill btn-sm stretched-link position-relative">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card shadow-sm p-4 border h-100">
+                        <div class="icon fs-1 text-danger mb-2" aria-hidden="true">
+                            <i class="fa fa-comments"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">Simple chat app</h3>
+                        <p class="text-body-secondary small">Real-time messaging with Node, Express, and Socket.IO.</p>
+                        <div class="project-tech d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge rounded-pill text-bg-secondary">Node.js</span>
+                            <span class="badge rounded-pill text-bg-secondary">Socket.IO</span>
+                        </div>
+                        <a href="https://pk-chat-ap.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-danger rounded-pill btn-sm stretched-link position-relative">
+                            Live demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card shadow-sm p-4 border h-100">
+                        <div class="icon fs-1 text-warning mb-2" aria-hidden="true">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">Shopping cart</h3>
+                        <p class="text-body-secondary small">React and Redux cart with dynamic pricing.</p>
+                        <div class="project-tech d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge rounded-pill text-bg-secondary">React</span>
+                            <span class="badge rounded-pill text-bg-secondary">Redux</span>
+                        </div>
+                        <a href="https://65ed557cc242b334dcb6ff90--coruscating-douhua-665051.netlify.app/"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning rounded-pill btn-sm stretched-link position-relative">
+                            Live demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card shadow-sm p-4 border h-100">
+                        <div class="icon fs-1 text-success mb-2" aria-hidden="true">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">Greenify — plant e-commerce</h3>
+                        <p class="text-body-secondary small">Plant store with auth and categorized listings.</p>
+                        <div class="project-tech d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge rounded-pill text-bg-secondary">Auth</span>
+                            <span class="badge rounded-pill text-bg-secondary">E-commerce</span>
+                        </div>
+                        <a href="https://github.com/prashant-kumar-dev/e-Shop" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-success rounded-pill btn-sm stretched-link position-relative">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 mb-4 mx-auto">
+                    <div class="card project-card shadow-sm p-4 border h-100">
+                        <div class="icon fs-1 text-danger mb-2" aria-hidden="true">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <h3 class="h5 card-title fw-bold">WealthSync — expense manager</h3>
+                        <p class="text-body-secondary small">Budgeting, expense tracking, and simple reports.</p>
+                        <div class="project-tech d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge rounded-pill text-bg-secondary">Product</span>
+                            <span class="badge rounded-pill text-bg-secondary">Finance</span>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 justify-content-center mt-auto pt-2">
                             <a href="https://drive.google.com/file/d/1c4XoWtt5-THlCQVG4GK2UyXb8s5fvGei/view"
-                                target="_blank" class="btn btn-outline-success shadow rounded-pill"
-                                style="position: relative; z-index: 10; pointer-events: auto;">
-                                🎥 Watch Demo
+                                target="_blank" rel="noopener noreferrer" class="btn btn-outline-success rounded-pill btn-sm position-relative z-1">
+                                Watch demo
                             </a>
-                            <a href="https://github.com/prashant-kumar-dev/wealth_sync" target="_blank"
-                                class="btn btn-outline-danger shadow rounded-pill"
-                                style="position: relative; z-index: 10; pointer-events: auto;">
+                            <a href="https://github.com/prashant-kumar-dev/wealth_sync" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-outline-danger rounded-pill btn-sm position-relative z-1">
                                 GitHub
                             </a>
                         </div>
@@ -523,62 +523,56 @@
 
 
     <!-- Achievements Section Starts Here -->
-    <section class="achievements py-5" id="achievements">
+    <section class="achievements py-5 section-band" id="achievements">
         <div class="container-lg py-4">
-            <!-- Section Title -->
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
+                    <p class="section-eyebrow">Highlights</p>
                     <div class="section-title">
-                        <i class="las la-award text-danger fs-1"></i>
-                        <h3 class="fw-bold mb-4">Achievements</h3>
+                        <i class="fa fa-trophy text-danger fs-1" aria-hidden="true"></i>
+                        <h2 class="fw-bold mb-2">Achievements</h2>
+                        <p class="text-body-secondary mb-4">Recognition and milestones.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Achievements Cards -->
             <div class="row justify-content-center gy-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-lg border-0 text-center p-4 h-100">
+                    <div class="card card-interactive shadow-sm border text-center p-4 h-100">
                         <div class="card-body">
-                            <i class="las la-certificate fs-1 text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">Essay Competition</h5>
-                            <p class="card-text text-muted">Won First Prize in Essay Competition organized by NSS Unit
-                                (NIT
-                                Bhopal).</p>
-                            <a href="images/nss.pdf" target="_blank" class="btn btn-outline-primary rounded-pill px-4"
-                                style="position: relative; z-index: 10; pointer-events: auto;">
-                                View Certificate
+                            <i class="fa fa-certificate fs-1 text-primary mb-3" aria-hidden="true"></i>
+                            <h3 class="h5 card-title fw-bold">Essay competition</h3>
+                            <p class="card-text text-body-secondary small">First prize, NSS Unit (NIT Bhopal).</p>
+                            <a href="images/nss.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary rounded-pill px-4 position-relative z-1">
+                                View certificate
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-lg border-0 text-center p-4 h-100">
+                    <div class="card card-interactive shadow-sm border text-center p-4 h-100">
                         <div class="card-body">
-                            <i class="las la-book-reader fs-1 text-success mb-3"></i>
-                            <h5 class="card-title fw-bold">NIMCET</h5>
-                            <p class="card-text text-muted">Secured 325th All India Rank in NIT MCA Common Entrance
-                                (NIMCET), organized by NIT Surathkal.</p>
-                            <a href="images/rankcard.pdf" target="_blank"
-                                class="btn btn-outline-success rounded-pill px-4"
-                                style="position: relative; z-index: 10; pointer-events: auto;">
-                                View Rank Card
+                            <i class="fa fa-book fs-1 text-success mb-3" aria-hidden="true"></i>
+                            <h3 class="h5 card-title fw-bold">NIMCET</h3>
+                            <p class="card-text text-body-secondary small">AIR 325, NIT MCA Common Entrance (NIT Surathkal).</p>
+                            <a href="images/rankcard.pdf" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-outline-success rounded-pill px-4 position-relative z-1">
+                                View rank card
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-lg border-0 text-center p-4 h-100">
+                    <div class="card card-interactive shadow-sm border text-center p-4 h-100">
                         <div class="card-body">
-                            <i class="las la-code fs-1 text-warning mb-3"></i>
-                            <h5 class="card-title fw-bold">Problem Solving</h5>
-                            <p class="card-text text-muted">5-star Gold Problem Solving Badge on HackerRank.</p>
-                            <a href="https://www.hackerrank.com/pksingh706586" target="_blank"
-                                class="btn btn-outline-warning rounded-pill px-4"
-                                style="position: relative; z-index: 10; pointer-events: auto;">
-                                View Profile
+                            <i class="fa fa-code fs-1 text-warning mb-3" aria-hidden="true"></i>
+                            <h3 class="h5 card-title fw-bold">Problem solving</h3>
+                            <p class="card-text text-body-secondary small">5-star Gold badge on HackerRank.</p>
+                            <a href="https://www.hackerrank.com/pksingh706586" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-outline-warning rounded-pill px-4 position-relative z-1">
+                                View profile
                             </a>
                         </div>
                     </div>
@@ -593,126 +587,158 @@
 
     <!-- projects section ends here -->
 
-    <!-- hire section starts here -->
-    <section class="freelance py-5 bg-danger">
-        <div class="container-lg py-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <marquee behavior="Scroll" direction="left" scrollamount="6">
-                        <p class="text-light fs-5">Looking for a Full Stack Developer with expertise in PHP, Laravel,
-                            Node.js, and React.js?</p>
-                    </marquee>
-                    <h2 class="fs-2 text-white mb-4">I'm Available for New Opportunities</h2>
-                    <a href="#contact" class="btn btn-outline-light rounded-pill shadow">Hire Me</a>
+    <section class="cta-opportunity py-5" aria-labelledby="cta-opportunity-heading">
+        <div class="container-lg py-3">
+            <div class="cta-opportunity-card rounded-4 p-4 p-md-5 mx-auto text-center position-relative overflow-hidden">
+                <div class="cta-opportunity-glow" aria-hidden="true"></div>
+                <div class="position-relative">
+                    <p class="cta-opportunity-eyebrow small fw-semibold text-uppercase mb-2">Open to work</p>
+                    <h2 id="cta-opportunity-heading" class="display-6 fw-bold mb-3">Available for new opportunities</h2>
+                    <p class="text-body-secondary mb-4 mx-auto fs-6" style="max-width: 28rem;">
+                        Full-stack delivery with PHP, Laravel, Node.js, React — plus data tools like MySQL, MongoDB, Redis &amp; Elasticsearch.
+                    </p>
+                    <div class="cta-ticker-shell rounded-pill py-2 px-3 mb-4 mx-auto">
+                        <div class="cta-ticker-wrap">
+                            <div class="cta-ticker text-body-secondary small" aria-hidden="true">
+                                <span class="cta-ticker-item">Hiring for fintech, e-commerce, or platform teams? Let’s talk.</span>
+                                <span class="cta-ticker-item">Hiring for fintech, e-commerce, or platform teams? Let’s talk.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-5 shadow-sm nav-link-scroll">
+                        <i class="fa fa-paper-plane me-2" aria-hidden="true"></i>Get in touch
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- hire section starts here -->
 
     <!-- Testimonials -->
     <section class="testimonials py-5" id="testimonials">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center fs-2 r">
-                        <i class="las la-quote-left"></i> <i class="las la-quote-right"></i></i>
-                        <h3 class="fw-bold mb-5 fs-2">Testimonials</h3>
+                <div class="col-lg-8 text-center">
+                    <p class="section-eyebrow">Peers</p>
+                    <div class="section-title fs-2">
+                        <span class="text-primary opacity-75" aria-hidden="true"><i class="fa fa-quote-left me-2"></i><i class="fa fa-quote-right"></i></span>
+                        <h2 class="fw-bold mb-5 fs-2">Testimonials</h2>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-7">
-                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
-                                class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"
-                                class="bg-danger"></button>
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"
-                                class="bg-danger"></button>
+                <div class="col-lg-9 col-xl-8">
+                    <div id="carousel1" class="carousel slide testi-carousel" data-bs-ride="carousel" data-bs-interval="7000"
+                        data-bs-wrap="true">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testi-slide card border-0 shadow-sm p-4 p-md-5">
+                                    <div class="testi-author-info d-flex align-items-center">
+                                        <div class="testi-avatar testi-avatar-tone-a" role="img" aria-label="Raj">R</div>
+                                        <div class="author ms-3">
+                                            <h3 class="fs-6 fw-bold mb-0">Raj</h3>
+                                            <p class="m-0 text-body-secondary small">Software Developer</p>
+                                        </div>
+                                    </div>
+                                    <blockquote class="testi-quote mb-0 mt-3">
+                                        <p class="mb-0">Prashant is an exceptional developer with a keen eye for detail. His
+                                        ability to solve complex problems and deliver high-quality code consistently
+                                        impressed our entire team. His expertise in both frontend and backend technologies
+                                        makes him a valuable asset to any project.</p>
+                                    </blockquote>
+                                    <div class="ratings text-danger mt-3 pt-2 border-top border-secondary-subtle" aria-label="4 stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testi-slide card border-0 shadow-sm p-4 p-md-5">
+                                    <div class="testi-author-info d-flex align-items-center">
+                                        <div class="testi-avatar testi-avatar-tone-b" role="img" aria-label="Raj">R</div>
+                                        <div class="author ms-3">
+                                            <h3 class="fs-6 fw-bold mb-0">Raj</h3>
+                                            <p class="m-0 text-body-secondary small">Software Developer</p>
+                                        </div>
+                                    </div>
+                                    <blockquote class="testi-quote mb-0 mt-3">
+                                        <p class="mb-0">Consistently strong communication and ownership on cross-functional work. Delivers on time and raises the bar for code quality.</p>
+                                    </blockquote>
+                                    <div class="ratings text-danger mt-3 pt-2 border-top border-secondary-subtle" aria-label="4 stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testi-slide card border-0 shadow-sm p-4 p-md-5">
+                                    <div class="testi-author-info d-flex align-items-center">
+                                        <div class="testi-avatar testi-avatar-tone-c" role="img" aria-label="Abhishek">A</div>
+                                        <div class="author ms-3">
+                                            <h3 class="fs-6 fw-bold mb-0">Abhishek</h3>
+                                            <p class="m-0 text-body-secondary small">Project Manager</p>
+                                        </div>
+                                    </div>
+                                    <blockquote class="testi-quote mb-0 mt-3">
+                                        <p class="mb-0">Working with Prashant was a pleasure. His technical skills are
+                                        impressive. He consistently delivered features ahead of schedule and was always
+                                        willing to help team members. I highly recommend him for any development role.</p>
+                                    </blockquote>
+                                    <div class="ratings text-danger mt-3 pt-2 border-top border-secondary-subtle" aria-label="4 stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-inner p-1">
-                            <div class="testi-item carousel-item active card shadow-sm rounded p-4 mb-5">
-                                <div class="testi-author-info d-flex align-items-center">
-                                    <img src="images/t.jpg" class="img-thumbnail rounded-circle " alt="author-img">
-                                    <div class="author ms-3">
-                                        <h3 class="fs-6 mb-1">Raj</h3>
-                                        <p class=" m-0">Software Developer</p>
-                                    </div>
-                                </div>
-                                <p class=" mt-3">Prashant is an exceptional developer with a keen eye for detail. His
-                                    ability to solve complex problems and deliver high-quality code consistently
-                                    impressed our entire team. His expertise in both frontend and backend technologies
-                                    makes him a valuable asset to any project </p>
-                                <div class="ratings text-danger">
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                </div>
-                            </div>
-                            <!-- Testimonials -->
-                            <div class="testi-item carousel-item card shadow-sm rounded p-4 mb-5">
-                                <div class="testi-author-info d-flex align-items-center">
-                                    <img src="images/t.jpg" class="img-thumbnail rounded-circle " alt="author-img">
-                                    <div class="author ms-3">
-                                        <h3 class="fs-6 mb-1">Raj</h3>
-                                        <p class="m-0">Software Developer</p>
-                                    </div>
-                                </div>
-                                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Adipisci
-                                    similique eos, assumenda
-                                    velit, facilis libero rem cumque amet excepturi neque qui illum. </p>
-                                <div class="ratings text-danger">
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                </div>
-                            </div>
 
-                            <div class="testi-item carousel-item card shadow-sm rounded p-4 mb-5">
-                                <div class="testi-author-info d-flex align-items-center">
-                                    <img src="images/t.jpg" class="img-thumbnail rounded-circle " alt="author-img">
-                                    <div class="author ms-3">
-                                        <h3 class="fs-6 mb-1">Abhishek</h3>
-                                        <p class=" m-0">Project Manager</p>
-                                    </div>
-                                </div>
-                                <p class=" mt-3">Working with Prashant was a pleasure. His technical skills are
-                                    impressive. He consistently delivered features ahead of schedule and was always
-                                    willing to help team members. I highly recommend him for any development role. </p>
-                                <div class="ratings text-danger">
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                    <i class="las la-star"></i>
-                                </div>
+                        <div class="testi-toolbar d-flex align-items-center justify-content-center flex-wrap gap-3 gap-md-4 mt-4">
+                            <button class="carousel-control-prev testi-nav-btn" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                <i class="fa fa-arrow-left me-2" aria-hidden="true"></i>
+                                <span>Previous</span>
+                                <span class="visually-hidden">testimonial</span>
+                            </button>
+                            <div class="carousel-indicators testi-dots m-0" role="tablist" aria-label="Choose testimonial">
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Testimonial 1"></button>
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Testimonial 2"></button>
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Testimonial 3"></button>
                             </div>
+                            <button class="carousel-control-next testi-nav-btn" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                <span>Next</span>
+                                <i class="fa fa-arrow-right ms-2" aria-hidden="true"></i>
+                                <span class="visually-hidden">testimonial</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- contact section starts -->
-    <section class="contact py-6" id="contact">
+    <section class="contact py-5 section-band" id="contact">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center fs-2 ">
-                        <i class="las la-address-book"></i>
-                        <h3 class="fw-bold mb-5 fs-2">Get In Touch</h3>
+                <div class="col-lg-8 text-center">
+                    <p class="section-eyebrow">Contact</p>
+                    <div class="section-title fs-2">
+                        <i class="fa fa-envelope text-danger" aria-hidden="true"></i>
+                        <h2 class="fw-bold mb-2 fs-2">Get in touch</h2>
+                        <p class="text-body-secondary mb-5">Send a message — I usually reply within a day or two.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-5">
                     <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-danger">
-                            <i class="las la-envelope"></i>
+                        <div class="icon text-danger" aria-hidden="true">
+                            <i class="fa fa-envelope fa-lg"></i>
                         </div>
                         <div class="text ms-3">
                             <h3 class="fs-4">Email</h3>
@@ -720,8 +746,8 @@
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-danger">
-                            <i class="las la-phone"></i>
+                        <div class="icon text-danger" aria-hidden="true">
+                            <i class="fa fa-phone fa-lg"></i>
                         </div>
                         <div class="text ms-3">
                             <h3 class="fs-4">Phone</h3>
@@ -729,8 +755,8 @@
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-danger">
-                            <i class="las la-map-marker-alt"></i>
+                        <div class="icon text-danger" aria-hidden="true">
+                            <i class="fa fa-map-marker fa-lg"></i>
                         </div>
                         <div class="text ms-3">
                             <h3 class="fs-4">Visit</h3>
@@ -740,35 +766,42 @@
                 </div>
                 <div class="col-md-7">
                     <div class="contact-form">
-                        <form action="https://formspree.io/f/mrgrqkzw" method="POST">
-                            <input type="hidden" name="_next" value="/thankyou.html" />
+                        <form id="contact-form" action="https://formspree.io/f/mrgrqkzw" method="POST" novalidate>
                             <div class="row">
                                 <div class="col-lg-6 mb-4">
-                                    <input type="text" placeholder="Your Name" name="name"
-                                        class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                                    <label class="form-label visually-hidden" for="contact-name">Name</label>
+                                    <input type="text" id="contact-name" placeholder="Your name" name="name" autocomplete="name"
+                                        class="form-control form-control-lg fs-6 border shadow-sm" required>
                                 </div>
                                 <div class="col-lg-6 mb-4">
-                                    <input type="email" placeholder="Your Email" name="_replyto"
-                                        class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
-                                </div>
-                            </div>
-                            <div class="row ">
-                                <div class="col-lg-12 mb-4">
-                                    <input type="text" placeholder="Your Subject" name="subject"
-                                        class="form-control  form-control-lg fs-6 border-0 shadow-sm" required>
-                                </div>
-                            </div>
-                            <div class="row ">
-                                <div class="col-lg-12 mb-4">
-                                    <textarea name="message" id="" cols="30" rows="5" placeholder="Your Message"
-                                        class="form-control  form-control-lg fs-6 border-0 shadow-sm"
-                                        required></textarea>
+                                    <label class="form-label visually-hidden" for="contact-email">Email</label>
+                                    <input type="email" id="contact-email" placeholder="Your email" name="_replyto" autocomplete="email"
+                                        class="form-control form-control-lg fs-6 border shadow-sm" required>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-12">
-                                    <button type="submit" class="btn btn-danger px-3 rounded-pill"
-                                        value="Send">Send</button>
+                                <div class="col-lg-12 mb-4">
+                                    <label class="form-label visually-hidden" for="contact-subject">Subject</label>
+                                    <input type="text" id="contact-subject" placeholder="Subject" name="subject"
+                                        class="form-control form-control-lg fs-6 border shadow-sm" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <label class="form-label visually-hidden" for="contact-message">Message</label>
+                                    <textarea name="message" id="contact-message" cols="30" rows="5" placeholder="Your message"
+                                        class="form-control form-control-lg fs-6 border shadow-sm" required></textarea>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-auto mb-3 mb-lg-0">
+                                    <button type="submit" id="contact-submit" class="btn btn-danger px-4 rounded-pill d-inline-flex align-items-center gap-2">
+                                        <span class="submit-label">Send message</span>
+                                        <span class="submit-spinner spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div class="col-lg">
+                                    <p id="form-feedback" class="form-feedback mb-0" role="status" aria-live="polite"></p>
                                 </div>
                             </div>
                         </form>
@@ -779,36 +812,31 @@
     </section>
     <!-- contact section starts -->
 
-    <!-- Scroll to Top Button-->
-    <div class="text-end mt-0 pe-4">
-        <a class="scroll-to-top btn btn-danger rounded text-end" href="#page-top"><i class="las la-angle-up"></i></a>
-    </div>
-    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top btn btn-danger" id="scroll-to-top" href="#page-top" aria-label="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
     <!-- footer section starts -->
     <footer class="footer border-top my-3">
         <div class="container-fluid text-center ">
             <div class="row">
                 <div class=" d-flex  justify-content-center">
-                    <div class="social-links  py-2 text-center  col-md-6 fs-2">
-                        <a href="https://www.facebook.com/prashant706586" target="_blank" class="px-3"><i
-                                class="fa fa-facebook-square"></i></a>
-                        <a href="https://www.linkedin.com/in/prashant-kumar-160bba132/" target="_blank" class="px-3"><i
-                                class="fa fa-linkedin-square"></i></a>
-                        <a href="https://github.com/pksingh128" target="_blank" class="px-3"><i
-                                class="fa fa-github-square"></i></a>
-                        <a href="https://www.instagram.com/prash.ant_kumar/" target="_blank" class="px-3"><i
-                                class="fa fa-instagram"></i></a>
-                        <a href="https://www.hackerrank.com/pksingh706586" target="_blank" class="px-1"><i
-                                class="lab la-hackerrank"></i></a>
+                    <div class="social-links py-2 text-center col-md-6 fs-2">
+                        <a href="https://www.facebook.com/prashant706586" target="_blank" rel="noopener noreferrer" class="px-3" aria-label="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/prashant-kumar-160bba132/" target="_blank" rel="noopener noreferrer" class="px-3" aria-label="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <a href="https://github.com/prashant-kumar-dev" target="_blank" rel="noopener noreferrer" class="px-3" aria-label="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/prash.ant_kumar/" target="_blank" rel="noopener noreferrer" class="px-3" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.hackerrank.com/pksingh706586" target="_blank" rel="noopener noreferrer" class="px-3 social-hackerrank" aria-label="HackerRank">
+                            <svg class="icon-hackerrank" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false">
+                                <rect x="3" y="4" width="7" height="24" rx="1.5" fill="currentColor"/>
+                                <rect x="22" y="4" width="7" height="24" rx="1.5" fill="currentColor"/>
+                                <rect x="3" y="12.5" width="26" height="7" rx="1.5" fill="currentColor"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class=" col-lg-12">
-                <p class="m-0 text-center">Copyright &copy;
-                    2021</script> created with ❤ by Prashant
-                </p>
+            <div class="col-lg-12">
+                <p class="m-0 text-center text-body-secondary small">© <span id="footer-year">2026</span> Prashant Kumar. Built with care.</p>
             </div>
         </div>
 
@@ -817,26 +845,12 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
-    <script src="index.js"></script>
-
-    <script src="https://unpkg.com/splitting@1.0.0/dist/splitting.js"></script>
-    <script>
-        Splitting();
-    </script>
-    <script>
-        // Load Lottie Animation
-        var animation = lottie.loadAnimation({
-            container: document.getElementById('lottie-animation'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: 'https://assets6.lottiefiles.com/packages/lf20_3rwasyjy.json' // Developer-themed animation
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js" defer></script>
+    <script src="https://unpkg.com/splitting@1.0.0/dist/splitting.js" defer></script>
+    <script src="index.js" defer></script>
 
 </body>
 
