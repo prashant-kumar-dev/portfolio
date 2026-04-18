@@ -17,13 +17,17 @@
   function applyTheme(mode) {
     var root = document.documentElement;
     root.setAttribute("data-bs-theme", mode);
+    var dark = mode === "dark";
+    var metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) {
+      metaTheme.setAttribute("content", dark ? "#12151c" : "#0d6efd");
+    }
     var btn = document.getElementById("theme-toggler");
     if (btn) {
-      var dark = mode === "dark";
       btn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
       btn.setAttribute("aria-pressed", dark ? "true" : "false");
       var icon = btn.querySelector(".theme-icon");
-      if (icon) icon.textContent = dark ? "🌙" : "☀️";
+      if (icon) icon.className = "theme-icon fa " + (dark ? "fa-moon-o" : "fa-sun-o");
     }
   }
 
@@ -218,9 +222,10 @@
     this.el = el;
     this.loopNum = 0;
     this.period = parseInt(period, 10) || 2000;
-    this.txt = "";
-    this.tick();
+    /* Start with the first phrase visible so the hero never flashes empty ("I'm |"). */
+    this.txt = toRotate && toRotate.length ? toRotate[0] : "";
     this.isDeleting = false;
+    this.tick();
   };
 
   TxtType.prototype.tick = function () {
@@ -261,6 +266,70 @@
     }
   }
 
+  function initScrollReveal() {
+    var sections = document.querySelectorAll(".section-reveal");
+    if (!sections.length) return;
+    var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced || !window.IntersectionObserver) {
+      sections.forEach(function (el) {
+        el.classList.add("section-reveal-visible");
+      });
+      return;
+    }
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("section-reveal-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { root: null, rootMargin: "0px 0px -2% 0px", threshold: 0.08 }
+    );
+    sections.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
+  function initProjectFilters() {
+    var buttons = document.querySelectorAll(".project-filter-btn");
+    var cols = document.querySelectorAll(".project-col");
+    var emptyMsg = document.getElementById("project-filter-empty");
+    if (!buttons.length || !cols.length) return;
+
+    function setActiveButton(activeBtn) {
+      buttons.forEach(function (b) {
+        var isActive = b === activeBtn;
+        b.classList.toggle("active", isActive);
+        b.classList.toggle("btn-primary", isActive);
+        b.classList.toggle("btn-outline-secondary", !isActive);
+      });
+    }
+
+    function applyFilter(filter) {
+      var visible = 0;
+      cols.forEach(function (col) {
+        var raw = col.getAttribute("data-tags") || "";
+        var tags = raw.split(/\s+/).filter(Boolean);
+        var show = filter === "all" || tags.indexOf(filter) !== -1;
+        col.classList.toggle("d-none", !show);
+        if (show) visible += 1;
+      });
+      if (emptyMsg) emptyMsg.classList.toggle("d-none", visible !== 0);
+    }
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var f = btn.getAttribute("data-filter") || "all";
+        setActiveButton(btn);
+        applyFilter(f);
+      });
+    });
+
+    applyFilter("all");
+  }
+
   function boot() {
     initTheme();
     var themeBtn = document.getElementById("theme-toggler");
@@ -271,8 +340,8 @@
     initContactForm();
     initTypewriter();
     initLottie();
-    var fy = document.getElementById("footer-year");
-    if (fy) fy.textContent = String(new Date().getFullYear());
+    initScrollReveal();
+    initProjectFilters();
     if (typeof Splitting !== "undefined") Splitting();
   }
 

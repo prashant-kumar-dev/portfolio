@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Prashant Kumar — Senior Software Engineer in New Delhi. Full-stack development, e-commerce, Node.js, React, PHP & Laravel.">
+        content="Prashant Kumar — Senior Software Engineer in New Delhi. Full-stack development, e-commerce, Node.js, React, .NET, PHP, Laravel, Kafka & more.">
     <meta name="theme-color" content="#0d6efd">
     <meta property="og:title" content="Prashant Kumar | Senior Software Engineer">
     <meta property="og:description"
-        content="Portfolio, projects, and experience in scalable web development and e-commerce.">
+        content="Portfolio and experience in scalable web development, e-commerce, Node, React, .NET, PHP/Laravel, and data tooling including Kafka.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Prashant Kumar | Senior Software Engineer">
+    <meta name="twitter:description"
+        content="Portfolio and experience in scalable web development, e-commerce, Node, React, .NET, PHP/Laravel, and data tooling including Kafka.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -29,83 +31,104 @@
 
 <body class="bg-body" id="page-top">
     <!-- navbar starts here -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom fixed-top shadow-sm py-3">
+    <nav class="navbar navbar-expand-lg site-navbar fixed-top" aria-label="Primary">
         <div class="container-lg">
-            <a class="navbar-brand text-danger fw-bold fs-4" href="#page-top" aria-label="Prashant Kumar, top of page">ԹɾαsհαղԵ</a>
+            <a class="navbar-brand site-brand align-items-center" href="#page-top" aria-label="Prashant Kumar, top of page">
+                <span class="brand-mark" aria-hidden="true">PK</span>
+                <span class="brand-wrap">
+                    <span class="brand-name">Prashant Kumar</span>
+                    <span class="brand-role d-none d-sm-block">Senior Software Engineer</span>
+                </span>
+            </a>
 
             <div class="d-flex align-items-center gap-2 ms-auto order-lg-2">
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center"
-                    id="theme-toggler" style="width: 40px; height: 40px;" aria-label="Switch to dark mode"
+                    class="btn site-icon-btn rounded-pill d-flex align-items-center justify-content-center"
+                    id="theme-toggler" style="width: 42px; height: 42px;" aria-label="Switch to dark mode"
                     aria-pressed="false">
-                    <span class="theme-icon" aria-hidden="true">☀️</span>
+                    <i class="theme-icon fa fa-sun-o" aria-hidden="true"></i>
                 </button>
-                <button class="navbar-toggler d-lg-none border-0 shadow-none px-2" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler site-nav-toggle d-lg-none border-0 shadow-none px-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Open menu">
-                    <i class="fa fa-bars fs-4" aria-hidden="true"></i>
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
             </div>
 
             <div class="collapse navbar-collapse order-lg-1 flex-lg-grow-0" id="navbarNav">
-                <ul class="navbar-nav ms-lg-auto pt-3 pt-lg-0">
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#home" data-section="home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#about" data-section="about">About</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#projects" data-section="projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#experience" data-section="experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#achievements" data-section="achievements">Achievements</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#testimonials" data-section="testimonials">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-3 nav-link-scroll" href="#contact" data-section="contact">Contact</a></li>
+                <ul class="navbar-nav site-nav-links ms-lg-auto pt-3 pt-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#home" data-section="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#about" data-section="about">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#projects" data-section="projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#experience" data-section="experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#achievements" data-section="achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#testimonials" data-section="testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#contact" data-section="contact">Contact</a></li>
+                    <li class="nav-item d-none d-lg-block ms-lg-2">
+                        <a href="#contact" class="btn btn-primary btn-sm rounded-pill px-3 fw-semibold nav-link-scroll shadow-sm">Get in touch</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- navbar starts end here -->
+    <!-- navbar ends here -->
 
     <!-- Home Section Starts Here -->
-    <section class="home py-5 d-flex align-items-center min-vh-100" id="home">
-        <div class="container-lg">
-            <div class="row align-items-center text-center text-md-start">
+    <section class="home hero-slab d-flex align-items-center" id="home">
+        <div class="hero-deco" aria-hidden="true">
+            <div class="hero-grid"></div>
+            <span class="hero-orb hero-orb-a"></span>
+            <span class="hero-orb hero-orb-b"></span>
+        </div>
+        <div class="container-lg position-relative z-hero">
+            <div class="row align-items-center justify-content-lg-between gy-4 gy-lg-5 gx-lg-4 text-center text-lg-start">
 
-                <!-- Animated Image Section -->
-                <div class="col-md-6 d-flex justify-content-center">
-                    <div class="lottie-wrap">
-                        <div id="lottie-animation" aria-hidden="true"></div>
+                <!-- Animated Image Section: top on mobile, left on desktop -->
+                <div class="col-lg-6 order-1 order-lg-1 d-flex justify-content-center">
+                    <div class="hero-visual">
+                        <div class="lottie-wrap">
+                            <div id="lottie-animation" aria-hidden="true"></div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Text Content Section -->
-                <div class="col-md-6 text-center text-md-start">
-                    <h5 class="fw-bold text-primary">Hello, I'm</h5>
-                    <h4 class="typewrite text-uppercase fw-bold text-primary" data-period="2000"
-                        data-type='[ "Prashant Kumar.", "a Creative Developer.", "a Problem Solver.", "a Tech Enthusiast 🚀" ]'>
-                        <span class="wrap"></span>
-                    </h4>
+                <!-- Text Content Section: below graphic on mobile, right on desktop -->
+                <div class="col-lg-6 order-2 order-lg-2 hero-copy text-center text-lg-start">
+                    <p class="hero-kicker mb-1">I&apos;m</p>
+                    <h1 class="hero-headline typewrite" data-period="2200"
+                        data-type='[ "Prashant Kumar.", "a creative developer.", "a problem solver.", "a tech enthusiast." ]'>
+                        <span class="wrap">Prashant Kumar.</span>
+                    </h1>
 
-                    <p class="mt-3 lead text-muted">
-                        👨‍💻 <strong>Software Engineer</strong> | 🧩 <strong>Problem Solver</strong> | 🚀 <strong>Tech
-                            Enthusiast</strong>
-                        Passionate about building <strong>scalable</strong> and <strong>efficient</strong> solutions
-                        while embracing the latest technologies.
+                    <p class="hero-lead mt-3 mb-0 mx-auto mx-lg-0">
+                        I ship <strong>end-to-end web products</strong> &mdash; APIs, dashboards, and storefronts &mdash; with a focus on
+                        <strong>performance</strong>, <strong>clarity</strong>, and maintainable code.
                     </p>
 
+                    <div class="hero-tags d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start mt-4" role="list" aria-label="Focus areas">
+                        <span class="hero-tag" role="listitem"><i class="fa fa-code me-1" aria-hidden="true"></i>Full-stack</span>
+                        <span class="hero-tag" role="listitem"><i class="fa fa-shopping-cart me-1" aria-hidden="true"></i>E-commerce</span>
+                        <span class="hero-tag" role="listitem">Node &middot; React</span>
+                        <span class="hero-tag" role="listitem">PHP &middot; Laravel</span>
+                        <span class="hero-tag" role="listitem">.NET</span>
+                    </div>
+
                     <!-- Call to Action Buttons -->
-                    <div class="mt-4 d-grid gap-3 d-md-flex justify-content-md-start justify-content-center flex-wrap">
-                        <a href="#about" class="btn btn-primary shadow-lg px-4 py-2 rounded-pill fw-semibold nav-link-scroll">
-                            Get to know me
+                    <div class="hero-actions mt-4 pt-lg-1 d-flex flex-column flex-sm-row gap-2 gap-sm-3 justify-content-lg-start justify-content-center align-items-center flex-wrap">
+                        <a href="#about" class="btn btn-primary btn-hero-primary px-4 py-3 rounded-pill fw-semibold nav-link-scroll shadow">
+                            Explore my work <i class="fa fa-arrow-right ms-2" aria-hidden="true"></i>
                         </a>
                         <a href="images/Resume-final.pdf" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-primary px-4 py-2 rounded-pill fw-semibold" download>
-                            Download resume
+                            class="btn btn-outline-primary btn-hero-outline px-4 py-3 rounded-pill fw-semibold" download>
+                            <i class="fa fa-download me-2" aria-hidden="true"></i>Download CV
                         </a>
                         <a href="images/Resume-final.pdf" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-secondary px-4 py-2 rounded-pill fw-semibold">
-                            Open resume
+                            class="hero-resume-link small text-decoration-none py-2">
+                            Open in browser
                         </a>
                     </div>
                 </div>
-
 
             </div>
         </div>
@@ -117,51 +140,46 @@
     <!-- home section ends here -->
 
 
-    <!-- about sectoin stats here -->
-    <section class="about py-4 section-band" id="about">
+    <!-- about section starts here -->
+    <section class="about py-4 section-band section-reveal" id="about">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <p class="section-eyebrow mb-0">Profile</p>
                     <div class="section-title fs-2">
-                        <i class="fa fa-id-card-o text-danger" aria-hidden="true"></i>
-                        <h2 class="fw-bold mb-2 fs-2">About me</h2>
-                        <p class="text-body-secondary mb-5 mx-auto" style="max-width: 36rem;">Engineer focused on scalable products, clean delivery, and measurable impact.</p>
+                        <h2 class="fw-bold mb-2 fs-2">About</h2>
+                        <p class="text-body-secondary mb-5 mx-auto" style="max-width: 36rem;">Senior engineer focused on scalable products, disciplined delivery, and clear ownership across the stack.</p>
                     </div>
                 </div>
             </div>
             <div class="row py-3">
                 <div class="col-md-6">
                     <div class="about-text">
-                        <h3 class="fs-4 mb-3">👋 Hello! I'm <strong>Prashant Kumar</strong></h3>
+                        <h3 class="fs-4 fw-bold mb-3">Prashant Kumar</h3>
                         <p>
-                            I am a <strong>Senior Software Engineer</strong> with a deep passion for problem-solving and
-                            building
-                            scalable, high-performance solutions. With extensive experience in <strong>software
-                                development and web
-                                technologies</strong>, I thrive on tackling complex challenges and continuously
-                            expanding my expertise.
+                            I work as a <strong>Senior Software Engineer</strong> on production systems across
+                            <strong>JavaScript</strong>, <strong>PHP</strong>, and <strong>.NET</strong>, with event-driven and data-heavy workloads using
+                            <strong>Kafka</strong>, relational and document stores, and search. I focus on clear architecture, predictable releases, and
+                            systems that stay maintainable as they grow.
                         </p>
                         <p>
-                            I am always eager to <strong>learn, innovate, and contribute</strong> to impactful projects
-                            in the tech
-                            industry. My goal is to develop solutions that drive efficiency, enhance user experiences,
-                            and make a real
-                            difference.
+                            I collaborate closely with product and platform stakeholders, translate requirements into stable services and UIs, and
+                            care about observability, performance, and code quality in day-to-day delivery.
                         </p>
                     </div>
 
                     <div class="row text-uppercase">
                         <div class="col-sm-12">
                             <div class="fact-item my-3">
-                                <h4 class="fs-4 fw-bold">🔹 Basic Information</h4>
-                                <p><span class="fw-bold">📧 Email:</span> <span
-                                        class="ps-4">pksingh706586@gmail.com</span></p>
-                                <p><span class="fw-bold">📞 Phone:</span> <span class="ps-3">+91 7065869947</span></p>
-                                <p><span class="fw-bold">📍 Address:</span> <span class="ps-3">New Delhi,
-                                        India</span></p>
-                                <p><span class="fw-bold">🗣️ Language:</span> <span class="ps-3">Hindi (Native),
-                                        English</span></p>
+                                <h4 class="fs-6 fw-bold text-uppercase text-body-secondary letter-spacing-wide mb-3">Contact details</h4>
+                                <p class="mb-2"><span class="fw-semibold text-body-secondary">Email</span><br>
+                                    <span>pksingh706586@gmail.com</span></p>
+                                <p class="mb-2"><span class="fw-semibold text-body-secondary">Phone</span><br>
+                                    <span>+91 7065869947</span></p>
+                                <p class="mb-2"><span class="fw-semibold text-body-secondary">Location</span><br>
+                                    <span>New Delhi, India</span></p>
+                                <p class="mb-0"><span class="fw-semibold text-body-secondary">Languages</span><br>
+                                    <span>Hindi (native), English (professional)</span></p>
                             </div>
                         </div>
                     </div>
@@ -169,7 +187,7 @@
                     <div class="row">
                         <div class="col-lg-12 d-flex align-items-center fs-2">
                             <a href="images/Resume-final.pdf" target="_blank" rel="noopener noreferrer"
-                                class="btn btn-outline-danger shadow me-4 my-4 ms-2 rounded-pill" download>
+                                class="btn btn-outline-primary shadow-sm me-4 my-4 ms-2 rounded-pill" download>
                                 Download resume
                             </a>
                             <div class="social-links py-2">
@@ -201,6 +219,7 @@
                             <span class="skill-chip">JavaScript</span>
                             <span class="skill-chip">Node.js</span>
                             <span class="skill-chip">PHP</span>
+                            <span class="skill-chip">C#</span>
                         </div>
 
                         <h4 class="skill-group-title">Frameworks &amp; UI</h4>
@@ -208,15 +227,17 @@
                             <span class="skill-chip">React</span>
                             <span class="skill-chip">Express</span>
                             <span class="skill-chip">Laravel</span>
+                            <span class="skill-chip">.NET</span>
                             <span class="skill-chip">Bootstrap</span>
                             <span class="skill-chip">Tailwind CSS</span>
                         </div>
 
-                        <h4 class="skill-group-title">Data, cache &amp; search</h4>
+                        <h4 class="skill-group-title">Data, cache, messaging &amp; search</h4>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="skill-chip">MySQL</span>
                             <span class="skill-chip">MongoDB</span>
                             <span class="skill-chip">Redis</span>
+                            <span class="skill-chip">Kafka</span>
                             <span class="skill-chip">Elasticsearch</span>
                         </div>
 
@@ -231,7 +252,8 @@
 
             <div class="row mt-5 mt-md-0">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-title mb-5 fs-2 fw-bold">🎓 Education</h2>
+                    <p class="section-eyebrow mb-2">Education</p>
+                    <h2 class="section-title mb-5 fs-2 fw-bold">Academic background</h2>
                 </div>
 
                 <!-- Master of Computer Applications (MCA) -->
@@ -296,17 +318,15 @@
         </div>
 
     </section>
-    <!-- about sectoin ends here -->
+    <!-- about section ends here -->
     <!-- Work Experience Section -->
-    <section class="experience py-5 section-band" id="experience">
+    <section class="experience py-5 section-band section-reveal" id="experience">
         <div class="container-lg">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <p class="section-eyebrow">Career</p>
-                    <h2 class="section-title fs-2 fw-bold mb-2">
-                        <i class="fa fa-briefcase text-primary" aria-hidden="true"></i> Work experience
-                    </h2>
-                    <p class="text-body-secondary mb-5">Roles where I shipped production systems and measurable improvements.</p>
+                    <h2 class="section-title fs-2 fw-bold mb-2">Work experience</h2>
+                    <p class="text-body-secondary mb-5">Selected roles with ownership of production systems and cross-team delivery.</p>
                 </div>
             </div>
 
@@ -368,23 +388,36 @@
 
 
     <!-- Projects Section Starts Here -->
-    <section class="projects py-5" id="projects">
+    <section class="projects py-5 section-reveal" id="projects">
         <div class="container-lg">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <p class="section-eyebrow">Portfolio</p>
                     <h2 class="section-title mb-2 fs-2 fw-bold">Featured projects</h2>
-                    <p class="text-body-secondary mb-5">Web, backend, and full-stack work with clear outcomes.</p>
+                    <p class="text-body-secondary mb-3">Representative work across full-stack and backend-heavy products.</p>
+                    <div class="project-filters-wrap text-center mb-4">
+                        <p class="small text-body-secondary text-uppercase fw-semibold mb-2 project-filters-label">Filter by focus</p>
+                        <div class="project-filters d-flex flex-wrap justify-content-center gap-2" role="group" aria-label="Filter projects">
+                            <button type="button" class="btn btn-sm btn-primary rounded-pill project-filter-btn active" data-filter="all">All</button>
+                            <button type="button" class="btn btn-sm rounded-pill btn-outline-secondary project-filter-btn" data-filter="full-stack">Full-stack</button>
+                            <button type="button" class="btn btn-sm rounded-pill btn-outline-secondary project-filter-btn" data-filter="ecommerce">E-commerce</button>
+                            <button type="button" class="btn btn-sm rounded-pill btn-outline-secondary project-filter-btn" data-filter="react">React</button>
+                            <button type="button" class="btn btn-sm rounded-pill btn-outline-secondary project-filter-btn" data-filter="nodejs">Node.js</button>
+                            <button type="button" class="btn btn-sm rounded-pill btn-outline-secondary project-filter-btn" data-filter="web">Web &amp; CRUD</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <p class="text-center text-body-secondary small mb-4 project-filter-empty d-none" id="project-filter-empty" role="status">No projects match this filter. Try &ldquo;All&rdquo;.</p>
+
             <!-- Projects Grid -->
-            <div class="row text-center justify-content-center">
+            <div class="row text-center justify-content-center" id="projects-grid">
 
                 <!-- Project Cards -->
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4 project-col" data-tags="full-stack ecommerce">
                     <div class="card project-card shadow-sm p-4 border h-100">
-                        <div class="icon fs-1 text-danger mb-2" aria-hidden="true">
+                        <div class="icon fs-1 text-primary mb-2" aria-hidden="true">
                             <i class="fa fa-cutlery"></i>
                         </div>
                         <h3 class="h5 card-title fw-bold">Pizza4U</h3>
@@ -394,13 +427,13 @@
                             <span class="badge rounded-pill text-bg-secondary">E-commerce</span>
                         </div>
                         <a href="https://github.com/prashant-kumar-dev/Pizza4U" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-danger rounded-pill btn-sm stretched-link position-relative">
+                            class="btn btn-outline-primary rounded-pill btn-sm stretched-link position-relative">
                             GitHub
                         </a>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4 project-col" data-tags="web crud">
                     <div class="card project-card shadow-sm p-4 border h-100">
                         <div class="icon fs-1 text-primary mb-2" aria-hidden="true">
                             <i class="fa fa-medkit"></i>
@@ -418,7 +451,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4 project-col" data-tags="web dashboard api crud">
                     <div class="card project-card shadow-sm p-4 border h-100">
                         <div class="icon fs-1 text-success mb-2" aria-hidden="true">
                             <i class="fa fa-users"></i>
@@ -436,9 +469,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4 project-col" data-tags="nodejs realtime">
                     <div class="card project-card shadow-sm p-4 border h-100">
-                        <div class="icon fs-1 text-danger mb-2" aria-hidden="true">
+                        <div class="icon fs-1 text-primary mb-2" aria-hidden="true">
                             <i class="fa fa-comments"></i>
                         </div>
                         <h3 class="h5 card-title fw-bold">Simple chat app</h3>
@@ -448,13 +481,13 @@
                             <span class="badge rounded-pill text-bg-secondary">Socket.IO</span>
                         </div>
                         <a href="https://pk-chat-ap.herokuapp.com/" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-danger rounded-pill btn-sm stretched-link position-relative">
+                            class="btn btn-outline-primary rounded-pill btn-sm stretched-link position-relative">
                             Live demo
                         </a>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4 project-col" data-tags="react redux">
                     <div class="card project-card shadow-sm p-4 border h-100">
                         <div class="icon fs-1 text-warning mb-2" aria-hidden="true">
                             <i class="fa fa-shopping-cart"></i>
@@ -472,7 +505,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4 project-col" data-tags="ecommerce auth">
                     <div class="card project-card shadow-sm p-4 border h-100">
                         <div class="icon fs-1 text-success mb-2" aria-hidden="true">
                             <i class="fa fa-leaf"></i>
@@ -490,9 +523,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-12 col-lg-6 mb-4 mx-auto">
+                <div class="col-md-12 col-lg-6 mb-4 mx-auto project-col" data-tags="product finance">
                     <div class="card project-card shadow-sm p-4 border h-100">
-                        <div class="icon fs-1 text-danger mb-2" aria-hidden="true">
+                        <div class="icon fs-1 text-primary mb-2" aria-hidden="true">
                             <i class="fa fa-money"></i>
                         </div>
                         <h3 class="h5 card-title fw-bold">WealthSync — expense manager</h3>
@@ -507,7 +540,7 @@
                                 Watch demo
                             </a>
                             <a href="https://github.com/prashant-kumar-dev/wealth_sync" target="_blank" rel="noopener noreferrer"
-                                class="btn btn-outline-danger rounded-pill btn-sm position-relative z-1">
+                                class="btn btn-outline-primary rounded-pill btn-sm position-relative z-1">
                                 GitHub
                             </a>
                         </div>
@@ -523,13 +556,13 @@
 
 
     <!-- Achievements Section Starts Here -->
-    <section class="achievements py-5 section-band" id="achievements">
+    <section class="achievements py-5 section-band section-reveal" id="achievements">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <p class="section-eyebrow">Highlights</p>
                     <div class="section-title">
-                        <i class="fa fa-trophy text-danger fs-1" aria-hidden="true"></i>
+                        <i class="fa fa-trophy text-primary fs-1" aria-hidden="true"></i>
                         <h2 class="fw-bold mb-2">Achievements</h2>
                         <p class="text-body-secondary mb-4">Recognition and milestones.</p>
                     </div>
@@ -587,21 +620,21 @@
 
     <!-- projects section ends here -->
 
-    <section class="cta-opportunity py-5" aria-labelledby="cta-opportunity-heading">
+    <section class="cta-opportunity py-5 section-reveal" aria-labelledby="cta-opportunity-heading">
         <div class="container-lg py-3">
             <div class="cta-opportunity-card rounded-4 p-4 p-md-5 mx-auto text-center position-relative overflow-hidden">
                 <div class="cta-opportunity-glow" aria-hidden="true"></div>
                 <div class="position-relative">
-                    <p class="cta-opportunity-eyebrow small fw-semibold text-uppercase mb-2">Open to work</p>
-                    <h2 id="cta-opportunity-heading" class="display-6 fw-bold mb-3">Available for new opportunities</h2>
+                    <p class="cta-opportunity-eyebrow small fw-semibold text-uppercase mb-2">Engagement</p>
+                    <h2 id="cta-opportunity-heading" class="display-6 fw-bold mb-3">Open to senior engineering roles</h2>
                     <p class="text-body-secondary mb-4 mx-auto fs-6" style="max-width: 28rem;">
-                        Full-stack delivery with PHP, Laravel, Node.js, React — plus data tools like MySQL, MongoDB, Redis &amp; Elasticsearch.
+                        Full-stack and platform work with PHP, Laravel, Node.js, React, and .NET; data stores and messaging with MySQL, MongoDB, Redis, Kafka, and Elasticsearch.
                     </p>
                     <div class="cta-ticker-shell rounded-pill py-2 px-3 mb-4 mx-auto">
                         <div class="cta-ticker-wrap">
                             <div class="cta-ticker text-body-secondary small" aria-hidden="true">
-                                <span class="cta-ticker-item">Hiring for fintech, e-commerce, or platform teams? Let’s talk.</span>
-                                <span class="cta-ticker-item">Hiring for fintech, e-commerce, or platform teams? Let’s talk.</span>
+                                <span class="cta-ticker-item">Fintech · e-commerce · high-traffic platforms — let’s discuss fit and scope.</span>
+                                <span class="cta-ticker-item">Fintech · e-commerce · high-traffic platforms — let’s discuss fit and scope.</span>
                             </div>
                         </div>
                     </div>
@@ -614,38 +647,38 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials py-5" id="testimonials">
+    <section class="testimonials py-5 section-reveal" id="testimonials">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <p class="section-eyebrow">Peers</p>
+                    <p class="section-eyebrow">Recommendations</p>
                     <div class="section-title fs-2">
                         <span class="text-primary opacity-75" aria-hidden="true"><i class="fa fa-quote-left me-2"></i><i class="fa fa-quote-right"></i></span>
-                        <h2 class="fw-bold mb-5 fs-2">Testimonials</h2>
+                        <h2 class="fw-bold mb-2 fs-2">Testimonials</h2>
+                        <p class="text-body-secondary small mb-5 mx-auto" style="max-width: 32rem;">From LinkedIn recommendations (received).</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-9 col-xl-8">
-                    <div id="carousel1" class="carousel slide testi-carousel" data-bs-ride="carousel" data-bs-interval="7000"
+                    <div id="carousel1" class="carousel slide testi-carousel" data-bs-ride="carousel" data-bs-interval="6500"
                         data-bs-wrap="true">
                         <div class="carousel-inner">
+                            <!-- Soujannya Roy · May 2025 -->
                             <div class="carousel-item active">
                                 <div class="testi-slide card border-0 shadow-sm p-4 p-md-5">
                                     <div class="testi-author-info d-flex align-items-center">
-                                        <div class="testi-avatar testi-avatar-tone-a" role="img" aria-label="Raj">R</div>
-                                        <div class="author ms-3">
-                                            <h3 class="fs-6 fw-bold mb-0">Raj</h3>
-                                            <p class="m-0 text-body-secondary small">Software Developer</p>
+                                        <div class="testi-avatar testi-avatar-tone-a" role="img" aria-label="Soujannya Roy">S</div>
+                                        <div class="author ms-3 text-start">
+                                            <h3 class="fs-6 fw-bold mb-0">Soujannya Roy</h3>
+                                            <p class="m-0 text-body-secondary small">Software Engineer @ Best Buy · Ex PwC, Applied Materials · May 2025</p>
                                         </div>
                                     </div>
                                     <blockquote class="testi-quote mb-0 mt-3">
-                                        <p class="mb-0">Prashant is an exceptional developer with a keen eye for detail. His
-                                        ability to solve complex problems and deliver high-quality code consistently
-                                        impressed our entire team. His expertise in both frontend and backend technologies
-                                        makes him a valuable asset to any project.</p>
+                                        <p class="mb-0">I had the pleasure of interning with Prashant at Applied Materials. He brought a great mix of technical skills, curiosity, and teamwork to every task. Always proactive and quick to learn, he consistently contributed valuable work to the team.</p>
                                     </blockquote>
-                                    <div class="ratings text-danger mt-3 pt-2 border-top border-secondary-subtle" aria-label="4 stars">
+                                    <div class="ratings text-primary mt-3 pt-2 border-top border-secondary-subtle" aria-label="5 stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -653,19 +686,21 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Ankit Jain · Mar 25, 2025 -->
                             <div class="carousel-item">
                                 <div class="testi-slide card border-0 shadow-sm p-4 p-md-5">
                                     <div class="testi-author-info d-flex align-items-center">
-                                        <div class="testi-avatar testi-avatar-tone-b" role="img" aria-label="Raj">R</div>
-                                        <div class="author ms-3">
-                                            <h3 class="fs-6 fw-bold mb-0">Raj</h3>
-                                            <p class="m-0 text-body-secondary small">Software Developer</p>
+                                        <div class="testi-avatar testi-avatar-tone-b" role="img" aria-label="Ankit Jain">A</div>
+                                        <div class="author ms-3 text-start">
+                                            <h3 class="fs-6 fw-bold mb-0">Ankit Jain</h3>
+                                            <p class="m-0 text-body-secondary small">Solution Architect · Managed Prashant directly · Mar 2025</p>
                                         </div>
                                     </div>
                                     <blockquote class="testi-quote mb-0 mt-3">
-                                        <p class="mb-0">Consistently strong communication and ownership on cross-functional work. Delivers on time and raises the bar for code quality.</p>
+                                        <p class="mb-0">Prashant is a highly skilled and detail-oriented developer with a strong problem-solving mindset. His ability to write clean, efficient code and quickly adapt to new technologies is impressive. He collaborates seamlessly with the team and delivers quality outcomes.</p>
                                     </blockquote>
-                                    <div class="ratings text-danger mt-3 pt-2 border-top border-secondary-subtle" aria-label="4 stars">
+                                    <div class="ratings text-primary mt-3 pt-2 border-top border-secondary-subtle" aria-label="5 stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -673,21 +708,87 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Puneet Kumar · Mar 24, 2025 -->
                             <div class="carousel-item">
                                 <div class="testi-slide card border-0 shadow-sm p-4 p-md-5">
                                     <div class="testi-author-info d-flex align-items-center">
-                                        <div class="testi-avatar testi-avatar-tone-c" role="img" aria-label="Abhishek">A</div>
-                                        <div class="author ms-3">
-                                            <h3 class="fs-6 fw-bold mb-0">Abhishek</h3>
-                                            <p class="m-0 text-body-secondary small">Project Manager</p>
+                                        <div class="testi-avatar testi-avatar-tone-c" role="img" aria-label="Puneet Kumar">P</div>
+                                        <div class="author ms-3 text-start">
+                                            <h3 class="fs-6 fw-bold mb-0">Puneet Kumar</h3>
+                                            <p class="m-0 text-body-secondary small">Full-stack developer · Mentor · Mar 2025</p>
                                         </div>
                                     </div>
                                     <blockquote class="testi-quote mb-0 mt-3">
-                                        <p class="mb-0">Working with Prashant was a pleasure. His technical skills are
-                                        impressive. He consistently delivered features ahead of schedule and was always
-                                        willing to help team members. I highly recommend him for any development role.</p>
+                                        <p class="mb-0">Prashant is a talented developer who learns quickly and takes initiative. His ability to adapt to new technologies and solve problems efficiently makes him a great addition to any team.</p>
                                     </blockquote>
-                                    <div class="ratings text-danger mt-3 pt-2 border-top border-secondary-subtle" aria-label="4 stars">
+                                    <div class="ratings text-primary mt-3 pt-2 border-top border-secondary-subtle" aria-label="5 stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mayur Koli · Mar 23, 2025 -->
+                            <div class="carousel-item">
+                                <div class="testi-slide card border-0 shadow-sm p-4 p-md-5">
+                                    <div class="testi-author-info d-flex align-items-center">
+                                        <div class="testi-avatar testi-avatar-tone-a" role="img" aria-label="Mayur Koli">M</div>
+                                        <div class="author ms-3 text-start">
+                                            <h3 class="fs-6 fw-bold mb-0">Mayur Koli</h3>
+                                            <p class="m-0 text-body-secondary small">SDE @ Amazon · Ex GAIN Credit · NIT Bhopal · Mar 2025</p>
+                                        </div>
+                                    </div>
+                                    <blockquote class="testi-quote mb-0 mt-3">
+                                        <p class="mb-0">Prashant is a highly skilled and dedicated professional with expertise in backend technologies. His problem-solving mindset, strong work ethic, and collaborative approach make him a valuable asset to any team. I highly recommend!</p>
+                                    </blockquote>
+                                    <div class="ratings text-primary mt-3 pt-2 border-top border-secondary-subtle" aria-label="5 stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Rishi Ranjan Kumar · Mar 23, 2025 -->
+                            <div class="carousel-item">
+                                <div class="testi-slide card border-0 shadow-sm p-4 p-md-5">
+                                    <div class="testi-author-info d-flex align-items-center">
+                                        <div class="testi-avatar testi-avatar-tone-b" role="img" aria-label="Rishi Ranjan Kumar">R</div>
+                                        <div class="author ms-3 text-start">
+                                            <h3 class="fs-6 fw-bold mb-0">Rishi Ranjan Kumar</h3>
+                                            <p class="m-0 text-body-secondary small">Founder &amp; CEO, Ladyfair · Mar 2025</p>
+                                        </div>
+                                    </div>
+                                    <blockquote class="testi-quote mb-0 mt-3">
+                                        <p class="mb-0">He is a great developer, a very honest man.</p>
+                                    </blockquote>
+                                    <div class="ratings text-primary mt-3 pt-2 border-top border-secondary-subtle" aria-label="5 stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mamta Kumari · Mar 22, 2025 -->
+                            <div class="carousel-item">
+                                <div class="testi-slide card border-0 shadow-sm p-4 p-md-5">
+                                    <div class="testi-author-info d-flex align-items-center">
+                                        <div class="testi-avatar testi-avatar-tone-c" role="img" aria-label="Mamta Kumari">K</div>
+                                        <div class="author ms-3 text-start">
+                                            <h3 class="fs-6 fw-bold mb-0">Mamta Kumari</h3>
+                                            <p class="m-0 text-body-secondary small">Senior Engineer @ Qualcomm · Ex Samsung, Applied Materials · Mar 2025</p>
+                                        </div>
+                                    </div>
+                                    <blockquote class="testi-quote mb-0 mt-3">
+                                        <p class="mb-0">I had the pleasure of working alongside Prashant during my internship at Applied Materials. Even within the short duration of the internship, Prashant&apos;s helpful nature and impressive skill set were immediately apparent.</p>
+                                    </blockquote>
+                                    <div class="ratings text-primary mt-3 pt-2 border-top border-secondary-subtle" aria-label="5 stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -708,6 +809,9 @@
                                     class="active" aria-current="true" aria-label="Testimonial 1"></button>
                                 <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Testimonial 2"></button>
                                 <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Testimonial 3"></button>
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Testimonial 4"></button>
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="4" aria-label="Testimonial 5"></button>
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="5" aria-label="Testimonial 6"></button>
                             </div>
                             <button class="carousel-control-next testi-nav-btn" type="button" data-bs-target="#carousel1" data-bs-slide="next">
                                 <span>Next</span>
@@ -722,13 +826,13 @@
     </section>
 
     <!-- contact section starts -->
-    <section class="contact py-5 section-band" id="contact">
+    <section class="contact py-5 section-band section-reveal" id="contact">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <p class="section-eyebrow">Contact</p>
                     <div class="section-title fs-2">
-                        <i class="fa fa-envelope text-danger" aria-hidden="true"></i>
+                        <i class="fa fa-envelope text-primary" aria-hidden="true"></i>
                         <h2 class="fw-bold mb-2 fs-2">Get in touch</h2>
                         <p class="text-body-secondary mb-5">Send a message — I usually reply within a day or two.</p>
                     </div>
@@ -737,7 +841,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="contact-item d-flex mb-3">
-                        <div class="icon text-danger" aria-hidden="true">
+                        <div class="icon text-primary" aria-hidden="true">
                             <i class="fa fa-envelope fa-lg"></i>
                         </div>
                         <div class="text ms-3">
@@ -746,7 +850,7 @@
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
-                        <div class="icon text-danger" aria-hidden="true">
+                        <div class="icon text-primary" aria-hidden="true">
                             <i class="fa fa-phone fa-lg"></i>
                         </div>
                         <div class="text ms-3">
@@ -755,7 +859,7 @@
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
-                        <div class="icon text-danger" aria-hidden="true">
+                        <div class="icon text-primary" aria-hidden="true">
                             <i class="fa fa-map-marker fa-lg"></i>
                         </div>
                         <div class="text ms-3">
@@ -812,14 +916,14 @@
     </section>
     <!-- contact section starts -->
 
-    <a class="scroll-to-top btn btn-danger" id="scroll-to-top" href="#page-top" aria-label="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    <a class="scroll-to-top btn btn-primary" id="scroll-to-top" href="#page-top" aria-label="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
-    <!-- footer section starts -->
-    <footer class="footer border-top my-3">
-        <div class="container-fluid text-center ">
-            <div class="row">
-                <div class=" d-flex  justify-content-center">
-                    <div class="social-links py-2 text-center col-md-6 fs-2">
+    <!-- footer section -->
+    <footer class="footer border-top">
+        <div class="container-lg text-center">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="social-links py-2 fs-2">
                         <a href="https://www.facebook.com/prashant706586" target="_blank" rel="noopener noreferrer" class="px-3" aria-label="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                         <a href="https://www.linkedin.com/in/prashant-kumar-160bba132/" target="_blank" rel="noopener noreferrer" class="px-3" aria-label="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                         <a href="https://github.com/prashant-kumar-dev" target="_blank" rel="noopener noreferrer" class="px-3" aria-label="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a>
@@ -832,16 +936,11 @@
                             </svg>
                         </a>
                     </div>
+                    <p class="mb-0 mt-1 text-body-secondary small">&copy; Prashant Kumar. Built with care.</p>
                 </div>
             </div>
-
-            <div class="col-lg-12">
-                <p class="m-0 text-center text-body-secondary small">© <span id="footer-year">2026</span> Prashant Kumar. Built with care.</p>
-            </div>
         </div>
-
     </footer>
-    <!-- footer section starts -->
 
 
 
