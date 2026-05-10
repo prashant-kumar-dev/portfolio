@@ -342,7 +342,6 @@
     initLottie();
     initScrollReveal();
     initProjectFilters();
-    if (typeof Splitting !== "undefined") Splitting();
   }
 
   if (document.readyState === "loading") {
